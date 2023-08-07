@@ -1,0 +1,10 @@
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\Junior School Evaluation Application.exe.config
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\Junior School Evaluation Application.exe
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\Junior School Evaluation Application.pdb
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior School Evaluation Application.csproj.AssemblyReference.cache
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior School Evaluation Application.csproj.SuggestedBindingRedirects.cache
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior_School_Evaluation_Application.Properties.Resources.resources
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior School Evaluation Application.csproj.GenerateResource.cache
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior School Evaluation Application.csproj.CoreCompileInputs.cache
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior School Evaluation Application.exe
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior School Evaluation Application.pdb
