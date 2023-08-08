@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txt_username = new System.Windows.Forms.TextBox();
-            this.txt_password = new System.Windows.Forms.TextBox();
-            this.lbl_username = new System.Windows.Forms.Label();
-            this.lbl_password = new System.Windows.Forms.Label();
             this.btn_login = new System.Windows.Forms.Button();
+            this.lbl_password = new System.Windows.Forms.Label();
+            this.lbl_username = new System.Windows.Forms.Label();
+            this.txt_password = new System.Windows.Forms.TextBox();
+            this.txt_username = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,46 +50,49 @@
             this.panel1.Size = new System.Drawing.Size(384, 361);
             this.panel1.TabIndex = 0;
             // 
-            // txt_username
-            // 
-            this.txt_username.Location = new System.Drawing.Point(129, 126);
-            this.txt_username.Name = "txt_username";
-            this.txt_username.Size = new System.Drawing.Size(187, 20);
-            this.txt_username.TabIndex = 0;
-            // 
-            // txt_password
-            // 
-            this.txt_password.Location = new System.Drawing.Point(129, 162);
-            this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(187, 20);
-            this.txt_password.TabIndex = 1;
-            // 
-            // lbl_username
-            // 
-            this.lbl_username.AutoSize = true;
-            this.lbl_username.Location = new System.Drawing.Point(68, 129);
-            this.lbl_username.Name = "lbl_username";
-            this.lbl_username.Size = new System.Drawing.Size(55, 13);
-            this.lbl_username.TabIndex = 2;
-            this.lbl_username.Text = "Username";
-            // 
-            // lbl_password
-            // 
-            this.lbl_password.AutoSize = true;
-            this.lbl_password.Location = new System.Drawing.Point(70, 165);
-            this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(53, 13);
-            this.lbl_password.TabIndex = 3;
-            this.lbl_password.Text = "Password";
-            // 
             // btn_login
             // 
-            this.btn_login.Location = new System.Drawing.Point(216, 188);
+            this.btn_login.Location = new System.Drawing.Point(216, 164);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(100, 23);
             this.btn_login.TabIndex = 4;
             this.btn_login.Text = "Log In";
             this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
+            // 
+            // lbl_password
+            // 
+            this.lbl_password.AutoSize = true;
+            this.lbl_password.Location = new System.Drawing.Point(70, 141);
+            this.lbl_password.Name = "lbl_password";
+            this.lbl_password.Size = new System.Drawing.Size(53, 13);
+            this.lbl_password.TabIndex = 3;
+            this.lbl_password.Text = "Password";
+            // 
+            // lbl_username
+            // 
+            this.lbl_username.AutoSize = true;
+            this.lbl_username.Location = new System.Drawing.Point(68, 115);
+            this.lbl_username.Name = "lbl_username";
+            this.lbl_username.Size = new System.Drawing.Size(55, 13);
+            this.lbl_username.TabIndex = 2;
+            this.lbl_username.Text = "Username";
+            // 
+            // txt_password
+            // 
+            this.txt_password.Location = new System.Drawing.Point(129, 138);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Size = new System.Drawing.Size(187, 20);
+            this.txt_password.TabIndex = 1;
+           
+            // 
+            // txt_username
+            // 
+            this.txt_username.Location = new System.Drawing.Point(129, 112);
+            this.txt_username.Name = "txt_username";
+            this.txt_username.Size = new System.Drawing.Size(187, 20);
+            this.txt_username.TabIndex = 0;
+            
             // 
             // Login
             // 
@@ -102,6 +105,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tag = "login-form";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
