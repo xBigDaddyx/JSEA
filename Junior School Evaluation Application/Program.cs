@@ -14,7 +14,7 @@ namespace Junior_School_Evaluation_Application
         [STAThread]
         static void Main()
         {
-            
+            sdad
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());

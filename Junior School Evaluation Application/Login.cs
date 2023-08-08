@@ -13,6 +13,8 @@ namespace Junior_School_Evaluation_Application
 {
     public partial class Login : Form
     {
+        const string username = "faisal";
+        const string password = "telo";
         public Login()
         {
             InitializeComponent();
@@ -22,6 +24,7 @@ namespace Junior_School_Evaluation_Application
             {
                 try
                 {
+                    
                     //:: state oledbconnection harus di buka dulu dengan methode Open()
                     connection.Open();
                     //:: menentukan query untuk mengambil password dengan parameter username
@@ -34,7 +37,7 @@ namespace Junior_School_Evaluation_Application
 
                     //:: logic untuk login
                     //:: jika password yang terenkripsi itu tidak kosong dan sama dengan password yang di input dari field username maka true
-                    if (encryptedPassword != null && encryptedPassword == DatabaseUtility.HashPassword(enteredPassword) ){ 
+                    if (enteredPassword != null && encryptedPassword == DatabaseUtility.HashPassword(enteredPassword) ){ 
                     return true; //:: kata sandi cocok
                     }
                     else
@@ -66,6 +69,7 @@ namespace Junior_School_Evaluation_Application
             if (VerifyLogin(enteredUsername, enteredPassword))
             {
                 MessageBox.Show("Login Berhasil, Selamat datang.");
+
             }
             else
             {
@@ -87,6 +91,33 @@ namespace Junior_School_Evaluation_Application
         private void Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt_password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter )
+            {
+                //:: memanggil metode ValidateInput untuk melakukan validasi sebelum verifikasi
+                if (!ValidateInput()) //:: jika ValidateInput hasilnya false
+                {
+                    return; //:: maka return null atau prosess login berhenti di sini
+                }
+
+                //:: variable baru untuk data dari field username dan password (menghindari SQL Injection)
+                string enteredUsername = txt_username.Text;
+                string enteredPassword = txt_password.Text;
+
+                //:: memanggil metode VerifyLogin untuk verifikasi login
+                if (VerifyLogin(enteredUsername, enteredPassword))
+                {
+                    MessageBox.Show("Login Berhasil, Selamat datang.");
+
+                }
+                else
+                {
+                    MessageBox.Show("Login gagal, silahkan coba lagi.");
+                }
+            }
         }
     }
 }
