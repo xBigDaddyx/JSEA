@@ -22,14 +22,19 @@ namespace Junior_School_Evaluation_Application
         //:::: fungsi public untuk koneksi dengan database
         public static OleDbConnection GetConnection()
         {
+            //:: ya karena pake access, menggunakan provider oledb
             return new OleDbConnection($"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={DatabasePath};");
         }
         public static string HashPassword(string password)
         {
+            //:: membuat variable enkripsi SHA256
             using (SHA256 sha256 = SHA256.Create())
             {
+                //:: membuat data type byte array dari hasil enkripsi password dengan sha256
                 byte[] hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                //:: membuat instansi variable baru untuk string builder
                 StringBuilder builder = new StringBuilder();
+                //:: setiap value dari variable byte akan di append/di gabung dalam sebuah string ke dalam variable builder
                 foreach(byte b in hashedBytes)
                 {
                     builder.Append(b.ToString("x2"));
