@@ -14,7 +14,7 @@ namespace Junior_School_Evaluation_Application
         //:::: variable static dan readonly untuk nama database 
         private static readonly string DatabaseFileName = "master_db.accdb";
         private const string DatabasePassword = "W@mb1s"; 
-        public static string AuthUsername = "Teacher_name"; //:: kolom username
+        public static string AuthUsername = "ID"; //:: kolom username
         public static string AuthPassword = "Teacher_password"; //:: kolom password
         public static string AuthTable = "Teachers"; //:: nama table untuk autentikasi
         //:::: variable static lokasi/path database berada

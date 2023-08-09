@@ -28,23 +28,18 @@ namespace Junior_School_Evaluation_Application
                     //:: state oledbconnection harus di buka dulu dengan methode Open()
                     connection.Open();
                     //:: memanggil metode GetLoginQuery untuk mengambil password dengan parameter username
-                    //string query = "SELECT COUNT(*) FROM Teachers WHERE Teacher_name = @Username AND Teacher_password = @Password";
                     string query = DatabaseUtility.GetLoginQuery();
                     //:: variable oledbcommand dengan mengeksekusi perintah dari query dengan koneksi dari variable connection
                     OleDbCommand command = new OleDbCommand(query,connection);
                     //:: menentukan parameter untuk @Username dan value ambil dari input textbox username
                     command.Parameters.AddWithValue("@Username", enteredUsername);
-                    //command.Parameters.AddWithValue("@Password", enteredPassword);
-
-                    //int count = (int)command.ExecuteScalar();
 
                     string encryptedPassword = (string)command.ExecuteScalar();
 
                     //:: logic untuk login
                     //:: jika password yang terenkripsi itu tidak kosong dan sama dengan password yang di input dari field username maka true
-                    if (enteredPassword != null && encryptedPassword == DatabaseUtility.HashPassword(enteredPassword) ){ 
-                    //if (count > 0)
-                    
+                    if (enteredPassword != null && encryptedPassword == DatabaseUtility.HashPassword(enteredPassword) )
+                    { 
                         return true; //:: kata sandi cocok
                     }
                     else
