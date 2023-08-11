@@ -92,11 +92,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Students.cs">
+    <Compile Include="Students\Models\StudentsDTO.cs" />
+    <Compile Include="Students\Services\StudentsInterfaces.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Students.Designer.cs">
-      <DependentUpon>Students.cs</DependentUpon>
+    <Compile Include="Students\Services\StudentsInterfaces.Designer.cs">
+      <DependentUpon>StudentsInterfaces.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -113,8 +114,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Students.resx">
-      <DependentUpon>Students.cs</DependentUpon>
+    <EmbeddedResource Include="Students\Services\StudentsInterfaces.resx">
+      <DependentUpon>StudentsInterfaces.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
@@ -145,5 +146,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
