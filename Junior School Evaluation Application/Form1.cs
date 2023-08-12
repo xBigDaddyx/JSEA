@@ -19,7 +19,7 @@ namespace Junior_School_Evaluation_Application
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

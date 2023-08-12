@@ -24,7 +24,6 @@ namespace Junior_School_Evaluation_Application
             {
                 try
                 {
-                    
                     //:: state oledbconnection harus di buka dulu dengan methode Open()
                     connection.Open();
                     //:: memanggil metode GetLoginQuery untuk mengambil password dengan parameter username
@@ -38,7 +37,7 @@ namespace Junior_School_Evaluation_Application
 
                     //:: logic untuk login
                     //:: jika password yang terenkripsi itu tidak kosong dan sama dengan password yang di input dari field username maka true
-                    if (enteredPassword != null && encryptedPassword == DatabaseUtility.HashPassword(enteredPassword) )
+                    if (enteredPassword != null && encryptedPassword == DatabaseUtility.HashPassword(enteredPassword) ) // contoh manggil fungsi hashpassword
                     { 
                         return true; //:: kata sandi cocok
                     }

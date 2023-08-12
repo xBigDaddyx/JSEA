@@ -34,16 +34,18 @@
             this.lbl_username = new System.Windows.Forms.Label();
             this.txt_password = new System.Windows.Forms.TextBox();
             this.txt_username = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.btn_login);
-            this.panel1.Controls.Add(this.lbl_password);
-            this.panel1.Controls.Add(this.lbl_username);
-            this.panel1.Controls.Add(this.txt_password);
-            this.panel1.Controls.Add(this.txt_username);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -52,7 +54,7 @@
             // 
             // btn_login
             // 
-            this.btn_login.Location = new System.Drawing.Point(216, 164);
+            this.btn_login.Location = new System.Drawing.Point(216, 170);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(100, 23);
             this.btn_login.TabIndex = 4;
@@ -63,7 +65,7 @@
             // lbl_password
             // 
             this.lbl_password.AutoSize = true;
-            this.lbl_password.Location = new System.Drawing.Point(70, 141);
+            this.lbl_password.Location = new System.Drawing.Point(3, 6);
             this.lbl_password.Name = "lbl_password";
             this.lbl_password.Size = new System.Drawing.Size(53, 13);
             this.lbl_password.TabIndex = 3;
@@ -72,7 +74,7 @@
             // lbl_username
             // 
             this.lbl_username.AutoSize = true;
-            this.lbl_username.Location = new System.Drawing.Point(68, 115);
+            this.lbl_username.Location = new System.Drawing.Point(3, 6);
             this.lbl_username.Name = "lbl_username";
             this.lbl_username.Size = new System.Drawing.Size(55, 13);
             this.lbl_username.TabIndex = 2;
@@ -80,7 +82,7 @@
             // 
             // txt_password
             // 
-            this.txt_password.Location = new System.Drawing.Point(129, 138);
+            this.txt_password.Location = new System.Drawing.Point(62, 3);
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '*';
             this.txt_password.Size = new System.Drawing.Size(187, 20);
@@ -89,10 +91,32 @@
             // 
             // txt_username
             // 
-            this.txt_username.Location = new System.Drawing.Point(129, 112);
+            this.txt_username.Location = new System.Drawing.Point(64, 3);
             this.txt_username.Name = "txt_username";
             this.txt_username.Size = new System.Drawing.Size(187, 20);
             this.txt_username.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.AutoSize = true;
+            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel2.Controls.Add(this.lbl_password);
+            this.panel2.Controls.Add(this.txt_password);
+            this.panel2.Location = new System.Drawing.Point(64, 138);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(252, 26);
+            this.panel2.TabIndex = 5;
+            // 
+            // panel3
+            // 
+            this.panel3.AutoSize = true;
+            this.panel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel3.Controls.Add(this.txt_username);
+            this.panel3.Controls.Add(this.lbl_username);
+            this.panel3.Location = new System.Drawing.Point(62, 106);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(254, 26);
+            this.panel3.TabIndex = 6;
             // 
             // Login
             // 
@@ -108,6 +132,10 @@
             this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -120,5 +148,7 @@
         private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.Label lbl_password;
         private System.Windows.Forms.Label lbl_username;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }
