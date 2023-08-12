@@ -27,6 +27,9 @@ namespace Junior_School_Evaluation_Application.Auth.Services
             if (VerifyLogin(enteredUsername, enteredPassword))
             {
                 MessageBox.Show("Login Berhasil, Selamat datang.");
+                view.Hide();
+                MainDashboard dashboard = new MainDashboard();
+                dashboard.Show();
 
             }
             else

@@ -62,5 +62,10 @@ namespace Junior_School_Evaluation_Application.Auth.Views
         {
 
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
