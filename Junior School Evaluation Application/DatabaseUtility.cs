@@ -31,7 +31,7 @@ namespace Junior_School_Evaluation_Application
 
         // semua database yang dibutuhkan oleh STUDENTS ------------------------------------------------
 
-        public static string studentTable = "students";
+        public static string studentTable = "Teachers";
 
         public static string studentCrudName = "name";
         public static string studentCrudGender = "gender";
@@ -65,11 +65,19 @@ namespace Junior_School_Evaluation_Application
 
         public static string studentCrudClass = "class_id";
 
+        public static string getViewStudentQuery()
+        {
+            string _command = "SELECT * FROM " + studentTable;
+            return _command;
+        }
+
         public static string getCreateStudentQuery(Students.Models.StudentsDTO newStudent)
         {
             string _command = "INSERT INTO " + studentTable + " (";
-            
-            _command += studentCrudName;
+
+            _command += "ID, Teacher_name, Teacher_password, Teacher_address, Teacher_phone";
+
+           /* _command += studentCrudName;
             _command += studentCrudGender;
             _command += studentCrudId;
             _command += studentCrudBirthPlace;
@@ -99,18 +107,30 @@ namespace Junior_School_Evaluation_Application
             _command += studentCrudTall;
             _command += studentCrudWeight;
             _command += studentCrudRange;
-            _command += studentCrudBrotherSisterCount;
+            _command += studentCrudBrotherSisterCount;*/
 
-            _command += " VALUES(";
+            _command += ") VALUES (";
 
-            _command += newStudent.name + ", ";
+            /*_command += "'" + newStudent.id + "', ";
+            _command += "'" + newStudent.name + "', ";
+            _command += "'" + newStudent.bornPlace + "', ";
+            _command += "'" + newStudent.address + "', ";
+            _command += "'" + newStudent.phoneNumber + "'";*/
+
+            _command += "@1, ";
+            _command += "@2, ";
+            _command += "@3, ";
+            _command += "@4, ";
+            _command += "@5";
+
+            /*_command += newStudent.name + ", ";
             _command += newStudent.gender + ", ";
             _command += newStudent.id + ", ";
             _command += newStudent.bornPlace + ", ";
             _command += newStudent.bornDate + ", ";
             _command += newStudent.religion + ", ";
             _command += newStudent.nation + ", ";
-            _command += newStudent.address + ", "; 
+            _command += newStudent.address + ", ";
             _command += newStudent.livingWith + ", ";
             _command += newStudent.bornOrder + ", ";
             _command += newStudent.age + ", ";
@@ -133,13 +153,13 @@ namespace Junior_School_Evaluation_Application
             _command += newStudent.range + ", ";
             _command += newStudent.brotherSisterCount + ", ";
 
-            _command += newStudent.classGroup + ", ";
+            _command += newStudent.classGroup + ", ";*/
 
-            _command += ")";
+            _command += ");";
 
             return _command;
         }
-
+        
         public static string getUpdateStudentQuery(string tblColName, string id, string newValue)
         {
             string _command = "UPDATE " + studentTable;
@@ -156,7 +176,6 @@ namespace Junior_School_Evaluation_Application
         }
 
         // ---------------------------------------------------------------------------------------------
-
 
 
 

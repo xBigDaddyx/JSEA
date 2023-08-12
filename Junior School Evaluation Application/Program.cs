@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Junior_School_Evaluation_Application.Students.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Junior_School_Evaluation_Application
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StudentsInterfaces());
+            Application.Run(new StudentsListInterfaces());
         }
     }
 }

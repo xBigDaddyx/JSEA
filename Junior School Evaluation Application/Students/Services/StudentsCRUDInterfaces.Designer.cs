@@ -1,6 +1,6 @@
 ﻿namespace Junior_School_Evaluation_Application
 {
-    partial class StudentsInterfaces
+    partial class StudentsCRUDInterfaces
     {
         /// <summary>
         /// Required designer variable.
@@ -49,6 +49,7 @@
             this.year_of_father_born = new System.Windows.Forms.DateTimePicker();
             this.txt_father_id = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.date_picker_born_date = new System.Windows.Forms.DateTimePicker();
             this.txt_phone = new System.Windows.Forms.TextBox();
             this.numb_born_order = new System.Windows.Forms.NumericUpDown();
             this.txt_born_place = new System.Windows.Forms.TextBox();
@@ -61,50 +62,49 @@
             this.txt_name = new System.Windows.Forms.TextBox();
             this.combo_gender = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txt_father_education = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txt_father_job = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txt_mother_jobs = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.txt_mother_education = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txt_mother_id = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.year_of_mother_born = new System.Windows.Forms.DateTimePicker();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txt_mother_name = new System.Windows.Forms.TextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txt_mother_job = new System.Windows.Forms.TextBox();
+            this.txt_mother_name = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txt_mother_education = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.year_of_mother_born = new System.Windows.Forms.DateTimePicker();
+            this.txt_mother_id = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txt_father_job = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txt_father_education = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.combo_class = new System.Windows.Forms.ComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.date_picker_born_date = new System.Windows.Forms.DateTimePicker();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.combo_range_type = new System.Windows.Forms.ComboBox();
+            this.combo_tall_type = new System.Windows.Forms.ComboBox();
+            this.num_tall = new System.Windows.Forms.NumericUpDown();
+            this.numb_weight = new System.Windows.Forms.NumericUpDown();
+            this.numb_range = new System.Windows.Forms.NumericUpDown();
+            this.numb_brother_sister = new System.Windows.Forms.NumericUpDown();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.numb_brother_sister = new System.Windows.Forms.NumericUpDown();
-            this.numb_range = new System.Windows.Forms.NumericUpDown();
-            this.numb_weight = new System.Windows.Forms.NumericUpDown();
-            this.num_tall = new System.Windows.Forms.NumericUpDown();
-            this.combo_tall_type = new System.Windows.Forms.ComboBox();
-            this.combo_range_type = new System.Windows.Forms.ComboBox();
-            this.label28 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numb_born_order)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numb_age)).BeginInit();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numb_brother_sister)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numb_range)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numb_weight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_tall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numb_weight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numb_range)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numb_brother_sister)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -242,9 +242,9 @@
             this.btn_cancel.BackColor = System.Drawing.Color.Salmon;
             this.btn_cancel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_cancel.Location = new System.Drawing.Point(545, 854);
+            this.btn_cancel.Location = new System.Drawing.Point(694, 701);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(99, 37);
+            this.btn_cancel.Size = new System.Drawing.Size(150, 60);
             this.btn_cancel.TabIndex = 20;
             this.btn_cancel.Text = "Batal";
             this.btn_cancel.UseVisualStyleBackColor = false;
@@ -275,9 +275,9 @@
             this.btn_save.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btn_save.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_save.Location = new System.Drawing.Point(650, 854);
+            this.btn_save.Location = new System.Drawing.Point(857, 701);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(115, 37);
+            this.btn_save.Size = new System.Drawing.Size(150, 60);
             this.btn_save.TabIndex = 21;
             this.btn_save.Text = "Simpan";
             this.btn_save.UseVisualStyleBackColor = false;
@@ -289,7 +289,7 @@
             this.txt_father_name.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_father_name.Location = new System.Drawing.Point(195, 38);
             this.txt_father_name.Name = "txt_father_name";
-            this.txt_father_name.Size = new System.Drawing.Size(400, 23);
+            this.txt_father_name.Size = new System.Drawing.Size(330, 23);
             this.txt_father_name.TabIndex = 0;
             // 
             // year_of_father_born
@@ -309,11 +309,12 @@
             this.txt_father_id.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_father_id.Location = new System.Drawing.Point(195, 77);
             this.txt_father_id.Name = "txt_father_id";
-            this.txt_father_id.Size = new System.Drawing.Size(400, 23);
+            this.txt_father_id.Size = new System.Drawing.Size(330, 23);
             this.txt_father_id.TabIndex = 40;
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.groupBox1.Controls.Add(this.date_picker_born_date);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
@@ -341,10 +342,18 @@
             this.groupBox1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(621, 548);
+            this.groupBox1.Size = new System.Drawing.Size(538, 548);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Identitas";
+            // 
+            // date_picker_born_date
+            // 
+            this.date_picker_born_date.Font = new System.Drawing.Font("Arial", 15F);
+            this.date_picker_born_date.Location = new System.Drawing.Point(196, 215);
+            this.date_picker_born_date.Name = "date_picker_born_date";
+            this.date_picker_born_date.Size = new System.Drawing.Size(200, 30);
+            this.date_picker_born_date.TabIndex = 41;
             // 
             // txt_phone
             // 
@@ -352,7 +361,7 @@
             this.txt_phone.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_phone.Location = new System.Drawing.Point(196, 489);
             this.txt_phone.Name = "txt_phone";
-            this.txt_phone.Size = new System.Drawing.Size(400, 23);
+            this.txt_phone.Size = new System.Drawing.Size(330, 23);
             this.txt_phone.TabIndex = 0;
             // 
             // numb_born_order
@@ -371,7 +380,7 @@
             this.txt_born_place.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_born_place.Location = new System.Drawing.Point(196, 175);
             this.txt_born_place.Name = "txt_born_place";
-            this.txt_born_place.Size = new System.Drawing.Size(400, 23);
+            this.txt_born_place.Size = new System.Drawing.Size(330, 23);
             this.txt_born_place.TabIndex = 6;
             // 
             // txt_living_with
@@ -380,7 +389,7 @@
             this.txt_living_with.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_living_with.Location = new System.Drawing.Point(196, 377);
             this.txt_living_with.Name = "txt_living_with";
-            this.txt_living_with.Size = new System.Drawing.Size(400, 23);
+            this.txt_living_with.Size = new System.Drawing.Size(330, 23);
             this.txt_living_with.TabIndex = 28;
             // 
             // numb_age
@@ -399,7 +408,7 @@
             this.txt_id_student.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_id_student.Location = new System.Drawing.Point(196, 137);
             this.txt_id_student.Name = "txt_id_student";
-            this.txt_id_student.Size = new System.Drawing.Size(400, 23);
+            this.txt_id_student.Size = new System.Drawing.Size(330, 23);
             this.txt_id_student.TabIndex = 2;
             // 
             // txt_address
@@ -408,7 +417,7 @@
             this.txt_address.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_address.Location = new System.Drawing.Point(196, 339);
             this.txt_address.Name = "txt_address";
-            this.txt_address.Size = new System.Drawing.Size(400, 23);
+            this.txt_address.Size = new System.Drawing.Size(330, 23);
             this.txt_address.TabIndex = 26;
             // 
             // txt_nation
@@ -417,7 +426,7 @@
             this.txt_nation.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nation.Location = new System.Drawing.Point(196, 301);
             this.txt_nation.Name = "txt_nation";
-            this.txt_nation.Size = new System.Drawing.Size(400, 23);
+            this.txt_nation.Size = new System.Drawing.Size(330, 23);
             this.txt_nation.TabIndex = 24;
             // 
             // combo_religion
@@ -443,7 +452,7 @@
             this.txt_name.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_name.Location = new System.Drawing.Point(196, 58);
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(400, 23);
+            this.txt_name.Size = new System.Drawing.Size(330, 23);
             this.txt_name.TabIndex = 0;
             // 
             // combo_gender
@@ -461,62 +470,65 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(662, 14);
+            this.groupBox2.Location = new System.Drawing.Point(570, 14);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(666, 547);
+            this.groupBox2.Size = new System.Drawing.Size(580, 547);
             this.groupBox2.TabIndex = 43;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Orangtua";
             // 
-            // txt_father_education
+            // groupBox4
             // 
-            this.txt_father_education.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_father_education.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_father_education.Location = new System.Drawing.Point(195, 158);
-            this.txt_father_education.Name = "txt_father_education";
-            this.txt_father_education.Size = new System.Drawing.Size(400, 23);
-            this.txt_father_education.TabIndex = 42;
+            this.groupBox4.BackColor = System.Drawing.Color.Wheat;
+            this.groupBox4.Controls.Add(this.label20);
+            this.groupBox4.Controls.Add(this.txt_mother_job);
+            this.groupBox4.Controls.Add(this.txt_mother_name);
+            this.groupBox4.Controls.Add(this.label18);
+            this.groupBox4.Controls.Add(this.label22);
+            this.groupBox4.Controls.Add(this.txt_mother_education);
+            this.groupBox4.Controls.Add(this.label21);
+            this.groupBox4.Controls.Add(this.label19);
+            this.groupBox4.Controls.Add(this.year_of_mother_born);
+            this.groupBox4.Controls.Add(this.txt_mother_id);
+            this.groupBox4.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(21, 296);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(538, 230);
+            this.groupBox4.TabIndex = 44;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Ibu";
             // 
-            // label15
+            // label20
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(18, 158);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(87, 18);
-            this.label15.TabIndex = 41;
-            this.label15.Text = "Pendidikan";
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(18, 33);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(74, 18);
+            this.label20.TabIndex = 46;
+            this.label20.Text = "Nama Ibu";
             // 
-            // txt_father_job
+            // txt_mother_job
             // 
-            this.txt_father_job.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_father_job.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_father_job.Location = new System.Drawing.Point(195, 197);
-            this.txt_father_job.Name = "txt_father_job";
-            this.txt_father_job.Size = new System.Drawing.Size(400, 23);
-            this.txt_father_job.TabIndex = 44;
+            this.txt_mother_job.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_mother_job.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mother_job.Location = new System.Drawing.Point(195, 192);
+            this.txt_mother_job.Name = "txt_mother_job";
+            this.txt_mother_job.Size = new System.Drawing.Size(330, 23);
+            this.txt_mother_job.TabIndex = 54;
             // 
-            // label17
+            // txt_mother_name
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(18, 198);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(79, 18);
-            this.label17.TabIndex = 43;
-            this.label17.Text = "Pekerjaan";
-            // 
-            // txt_mother_jobs
-            // 
-            this.txt_mother_jobs.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_mother_jobs.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mother_jobs.Location = new System.Drawing.Point(195, 192);
-            this.txt_mother_jobs.Name = "txt_mother_jobs";
-            this.txt_mother_jobs.Size = new System.Drawing.Size(400, 23);
-            this.txt_mother_jobs.TabIndex = 54;
+            this.txt_mother_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_mother_name.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mother_name.Location = new System.Drawing.Point(195, 33);
+            this.txt_mother_name.Name = "txt_mother_name";
+            this.txt_mother_name.Size = new System.Drawing.Size(330, 23);
+            this.txt_mother_name.TabIndex = 45;
             // 
             // label18
             // 
@@ -528,14 +540,34 @@
             this.label18.TabIndex = 53;
             this.label18.Text = "Pekerjaan";
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(18, 113);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(87, 18);
+            this.label22.TabIndex = 48;
+            this.label22.Text = "Tahun Lahir";
+            // 
             // txt_mother_education
             // 
             this.txt_mother_education.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_mother_education.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_mother_education.Location = new System.Drawing.Point(195, 153);
             this.txt_mother_education.Name = "txt_mother_education";
-            this.txt_mother_education.Size = new System.Drawing.Size(400, 23);
+            this.txt_mother_education.Size = new System.Drawing.Size(330, 23);
             this.txt_mother_education.TabIndex = 52;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(18, 73);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(33, 18);
+            this.label21.TabIndex = 47;
+            this.label21.Text = "NIK";
             // 
             // label19
             // 
@@ -546,25 +578,6 @@
             this.label19.Size = new System.Drawing.Size(87, 18);
             this.label19.TabIndex = 51;
             this.label19.Text = "Pendidikan";
-            // 
-            // txt_mother_id
-            // 
-            this.txt_mother_id.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_mother_id.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mother_id.Location = new System.Drawing.Point(195, 72);
-            this.txt_mother_id.Name = "txt_mother_id";
-            this.txt_mother_id.Size = new System.Drawing.Size(400, 23);
-            this.txt_mother_id.TabIndex = 50;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(18, 33);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(74, 18);
-            this.label20.TabIndex = 46;
-            this.label20.Text = "Nama Ibu";
             // 
             // year_of_mother_born
             // 
@@ -577,37 +590,18 @@
             this.year_of_mother_born.Size = new System.Drawing.Size(65, 26);
             this.year_of_mother_born.TabIndex = 49;
             // 
-            // label21
+            // txt_mother_id
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(18, 73);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(33, 18);
-            this.label21.TabIndex = 47;
-            this.label21.Text = "NIK";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(18, 113);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(87, 18);
-            this.label22.TabIndex = 48;
-            this.label22.Text = "Tahun Lahir";
-            // 
-            // txt_mother_name
-            // 
-            this.txt_mother_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_mother_name.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mother_name.Location = new System.Drawing.Point(195, 33);
-            this.txt_mother_name.Name = "txt_mother_name";
-            this.txt_mother_name.Size = new System.Drawing.Size(400, 23);
-            this.txt_mother_name.TabIndex = 45;
+            this.txt_mother_id.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_mother_id.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mother_id.Location = new System.Drawing.Point(195, 72);
+            this.txt_mother_id.Name = "txt_mother_id";
+            this.txt_mother_id.Size = new System.Drawing.Size(330, 23);
+            this.txt_mother_id.TabIndex = 50;
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.Wheat;
             this.groupBox3.Controls.Add(this.txt_father_job);
             this.groupBox3.Controls.Add(this.txt_father_name);
             this.groupBox3.Controls.Add(this.label16);
@@ -621,30 +615,48 @@
             this.groupBox3.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(21, 46);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(621, 237);
+            this.groupBox3.Size = new System.Drawing.Size(538, 237);
             this.groupBox3.TabIndex = 44;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Ayah";
             // 
-            // groupBox4
+            // txt_father_job
             // 
-            this.groupBox4.Controls.Add(this.label20);
-            this.groupBox4.Controls.Add(this.txt_mother_jobs);
-            this.groupBox4.Controls.Add(this.txt_mother_name);
-            this.groupBox4.Controls.Add(this.label18);
-            this.groupBox4.Controls.Add(this.label22);
-            this.groupBox4.Controls.Add(this.txt_mother_education);
-            this.groupBox4.Controls.Add(this.label21);
-            this.groupBox4.Controls.Add(this.label19);
-            this.groupBox4.Controls.Add(this.year_of_mother_born);
-            this.groupBox4.Controls.Add(this.txt_mother_id);
-            this.groupBox4.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(21, 296);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(621, 230);
-            this.groupBox4.TabIndex = 44;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Ibu";
+            this.txt_father_job.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_father_job.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_father_job.Location = new System.Drawing.Point(195, 197);
+            this.txt_father_job.Name = "txt_father_job";
+            this.txt_father_job.Size = new System.Drawing.Size(330, 23);
+            this.txt_father_job.TabIndex = 44;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(18, 158);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(87, 18);
+            this.label15.TabIndex = 41;
+            this.label15.Text = "Pendidikan";
+            // 
+            // txt_father_education
+            // 
+            this.txt_father_education.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_father_education.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_father_education.Location = new System.Drawing.Point(195, 158);
+            this.txt_father_education.Name = "txt_father_education";
+            this.txt_father_education.Size = new System.Drawing.Size(330, 23);
+            this.txt_father_education.TabIndex = 42;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(18, 198);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(79, 18);
+            this.label17.TabIndex = 43;
+            this.label17.Text = "Pekerjaan";
             // 
             // label23
             // 
@@ -669,31 +681,25 @@
             "Bintang"});
             this.combo_class.Location = new System.Drawing.Point(195, 37);
             this.combo_class.Name = "combo_class";
-            this.combo_class.Size = new System.Drawing.Size(299, 26);
+            this.combo_class.Size = new System.Drawing.Size(364, 26);
             this.combo_class.TabIndex = 42;
             // 
             // groupBox5
             // 
+            this.groupBox5.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.groupBox5.Controls.Add(this.combo_class);
             this.groupBox5.Controls.Add(this.label23);
             this.groupBox5.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(662, 585);
+            this.groupBox5.Location = new System.Drawing.Point(570, 577);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(517, 84);
+            this.groupBox5.Size = new System.Drawing.Size(580, 84);
             this.groupBox5.TabIndex = 44;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Kelas";
             // 
-            // date_picker_born_date
-            // 
-            this.date_picker_born_date.Font = new System.Drawing.Font("Arial", 15F);
-            this.date_picker_born_date.Location = new System.Drawing.Point(196, 215);
-            this.date_picker_born_date.Name = "date_picker_born_date";
-            this.date_picker_born_date.Size = new System.Drawing.Size(200, 30);
-            this.date_picker_born_date.TabIndex = 41;
-            // 
             // groupBox6
             // 
+            this.groupBox6.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.groupBox6.Controls.Add(this.label28);
             this.groupBox6.Controls.Add(this.combo_range_type);
             this.groupBox6.Controls.Add(this.combo_tall_type);
@@ -706,12 +712,116 @@
             this.groupBox6.Controls.Add(this.label24);
             this.groupBox6.Controls.Add(this.label25);
             this.groupBox6.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(13, 585);
+            this.groupBox6.Location = new System.Drawing.Point(13, 577);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(621, 217);
+            this.groupBox6.Size = new System.Drawing.Size(538, 203);
             this.groupBox6.TabIndex = 45;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Periodik";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(274, 87);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(25, 18);
+            this.label28.TabIndex = 64;
+            this.label28.Text = "kg";
+            // 
+            // combo_range_type
+            // 
+            this.combo_range_type.Font = new System.Drawing.Font("Arial", 12F);
+            this.combo_range_type.FormattingEnabled = true;
+            this.combo_range_type.Items.AddRange(new object[] {
+            "cm",
+            "m",
+            "km"});
+            this.combo_range_type.Location = new System.Drawing.Point(274, 124);
+            this.combo_range_type.Name = "combo_range_type";
+            this.combo_range_type.Size = new System.Drawing.Size(53, 26);
+            this.combo_range_type.TabIndex = 63;
+            // 
+            // combo_tall_type
+            // 
+            this.combo_tall_type.Font = new System.Drawing.Font("Arial", 12F);
+            this.combo_tall_type.FormattingEnabled = true;
+            this.combo_tall_type.Items.AddRange(new object[] {
+            "cm",
+            "m",
+            "km"});
+            this.combo_tall_type.Location = new System.Drawing.Point(274, 45);
+            this.combo_tall_type.Name = "combo_tall_type";
+            this.combo_tall_type.Size = new System.Drawing.Size(53, 26);
+            this.combo_tall_type.TabIndex = 62;
+            // 
+            // num_tall
+            // 
+            this.num_tall.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.num_tall.DecimalPlaces = 1;
+            this.num_tall.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.num_tall.Location = new System.Drawing.Point(199, 47);
+            this.num_tall.Maximum = new decimal(new int[] {
+            200,
+            0,
+            0,
+            0});
+            this.num_tall.Name = "num_tall";
+            this.num_tall.Size = new System.Drawing.Size(65, 22);
+            this.num_tall.TabIndex = 61;
+            this.num_tall.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // numb_weight
+            // 
+            this.numb_weight.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numb_weight.DecimalPlaces = 1;
+            this.numb_weight.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numb_weight.Location = new System.Drawing.Point(199, 84);
+            this.numb_weight.Name = "numb_weight";
+            this.numb_weight.Size = new System.Drawing.Size(65, 22);
+            this.numb_weight.TabIndex = 60;
+            this.numb_weight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // numb_range
+            // 
+            this.numb_range.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numb_range.DecimalPlaces = 1;
+            this.numb_range.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numb_range.Location = new System.Drawing.Point(199, 126);
+            this.numb_range.Name = "numb_range";
+            this.numb_range.Size = new System.Drawing.Size(65, 22);
+            this.numb_range.TabIndex = 59;
+            this.numb_range.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // numb_brother_sister
+            // 
+            this.numb_brother_sister.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numb_brother_sister.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numb_brother_sister.Location = new System.Drawing.Point(199, 165);
+            this.numb_brother_sister.Name = "numb_brother_sister";
+            this.numb_brother_sister.Size = new System.Drawing.Size(65, 22);
+            this.numb_brother_sister.TabIndex = 58;
+            this.numb_brother_sister.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(22, 166);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(121, 18);
+            this.label27.TabIndex = 57;
+            this.label27.Text = "Jumlah Saudara";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(22, 127);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(105, 18);
+            this.label26.TabIndex = 55;
+            this.label26.Text = "Jarak Tempuh";
             // 
             // label24
             // 
@@ -733,117 +843,13 @@
             this.label25.TabIndex = 53;
             this.label25.Text = "Berat Badan";
             // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(22, 127);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(105, 18);
-            this.label26.TabIndex = 55;
-            this.label26.Text = "Jarak Tempuh";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(22, 166);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(121, 18);
-            this.label27.TabIndex = 57;
-            this.label27.Text = "Jumlah Saudara";
-            // 
-            // numb_brother_sister
-            // 
-            this.numb_brother_sister.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numb_brother_sister.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numb_brother_sister.Location = new System.Drawing.Point(199, 165);
-            this.numb_brother_sister.Name = "numb_brother_sister";
-            this.numb_brother_sister.Size = new System.Drawing.Size(65, 22);
-            this.numb_brother_sister.TabIndex = 58;
-            this.numb_brother_sister.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // numb_range
-            // 
-            this.numb_range.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numb_range.DecimalPlaces = 1;
-            this.numb_range.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numb_range.Location = new System.Drawing.Point(199, 126);
-            this.numb_range.Name = "numb_range";
-            this.numb_range.Size = new System.Drawing.Size(65, 22);
-            this.numb_range.TabIndex = 59;
-            this.numb_range.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // numb_weight
-            // 
-            this.numb_weight.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numb_weight.DecimalPlaces = 1;
-            this.numb_weight.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numb_weight.Location = new System.Drawing.Point(199, 84);
-            this.numb_weight.Name = "numb_weight";
-            this.numb_weight.Size = new System.Drawing.Size(65, 22);
-            this.numb_weight.TabIndex = 60;
-            this.numb_weight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // num_tall
-            // 
-            this.num_tall.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.num_tall.DecimalPlaces = 1;
-            this.num_tall.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_tall.Location = new System.Drawing.Point(199, 47);
-            this.num_tall.Maximum = new decimal(new int[] {
-            200,
-            0,
-            0,
-            0});
-            this.num_tall.Name = "num_tall";
-            this.num_tall.Size = new System.Drawing.Size(65, 22);
-            this.num_tall.TabIndex = 61;
-            this.num_tall.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // combo_tall_type
-            // 
-            this.combo_tall_type.Font = new System.Drawing.Font("Arial", 12F);
-            this.combo_tall_type.FormattingEnabled = true;
-            this.combo_tall_type.Items.AddRange(new object[] {
-            "cm",
-            "m",
-            "km"});
-            this.combo_tall_type.Location = new System.Drawing.Point(274, 45);
-            this.combo_tall_type.Name = "combo_tall_type";
-            this.combo_tall_type.Size = new System.Drawing.Size(53, 26);
-            this.combo_tall_type.TabIndex = 62;
-            // 
-            // combo_range_type
-            // 
-            this.combo_range_type.Font = new System.Drawing.Font("Arial", 12F);
-            this.combo_range_type.FormattingEnabled = true;
-            this.combo_range_type.Items.AddRange(new object[] {
-            "cm",
-            "m",
-            "km"});
-            this.combo_range_type.Location = new System.Drawing.Point(274, 124);
-            this.combo_range_type.Name = "combo_range_type";
-            this.combo_range_type.Size = new System.Drawing.Size(53, 26);
-            this.combo_range_type.TabIndex = 63;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(274, 87);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(25, 18);
-            this.label28.TabIndex = 64;
-            this.label28.Text = "kg";
-            // 
-            // StudentsInterfaces
+            // StudentsCRUDInterfaces
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(1345, 946);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1161, 788);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
@@ -851,7 +857,8 @@
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.btn_cancel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "StudentsInterfaces";
+            this.Name = "StudentsCRUDInterfaces";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Tambahkan Siswa Baru";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Students_Load);
@@ -860,18 +867,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.numb_born_order)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numb_age)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numb_brother_sister)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numb_range)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numb_weight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_tall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numb_weight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numb_range)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numb_brother_sister)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -912,7 +919,7 @@
         private System.Windows.Forms.ComboBox combo_religion;
         private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.ComboBox combo_gender;
-        private System.Windows.Forms.TextBox txt_mother_jobs;
+        private System.Windows.Forms.TextBox txt_mother_job;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txt_mother_education;
         private System.Windows.Forms.Label label19;
