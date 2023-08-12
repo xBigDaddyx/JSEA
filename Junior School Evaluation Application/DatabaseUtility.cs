@@ -31,7 +31,7 @@ namespace Junior_School_Evaluation_Application
 
         // semua database yang dibutuhkan oleh STUDENTS ------------------------------------------------
 
-        public static string studentTable = "Teachers";
+        public static string studentTable = "students";
 
         public static string studentCrudName = "name";
         public static string studentCrudGender = "gender";
@@ -67,7 +67,7 @@ namespace Junior_School_Evaluation_Application
 
         public static string getViewStudentQuery()
         {
-            string _command = "SELECT * FROM " + studentTable;
+            string _command = "SELECT " + studentCrudId + ", " + studentCrudName + ", " + studentCrudPhoneNumber + " FROM " + studentTable;
             return _command;
         }
 
@@ -75,87 +75,83 @@ namespace Junior_School_Evaluation_Application
         {
             string _command = "INSERT INTO " + studentTable + " (";
 
-            _command += "ID, Teacher_name, Teacher_password, Teacher_address, Teacher_phone";
+            _command += studentCrudName + ", ";
+            _command += studentCrudGender + ", ";
+            _command += studentCrudId + ", ";
+            _command += studentCrudBirthPlace + ", ";
+            _command += studentCrudBirthDate + ", ";
+            _command += studentCrudReligion + ", ";
+            _command += studentCrudNation + ", ";
+            _command += studentCrudAddress + ", ";
+            _command += studentCrudHouseWith + ", ";
+            _command += studentCrudBirthOrder + ", ";
+            _command += studentCrudAge + ", ";
+            _command += studentCrudPhoneNumber + ", ";
 
-           /* _command += studentCrudName;
-            _command += studentCrudGender;
-            _command += studentCrudId;
-            _command += studentCrudBirthPlace;
-            _command += studentCrudBirthDate;
-            _command += studentCrudReligion;
-            _command += studentCrudNation;
-            _command += studentCrudAddress;
-            _command += studentCrudHouseWith;
-            _command += studentCrudBirthOrder;
-            _command += studentCrudAge;
-            _command += studentCrudPhoneNumber;
+            _command += fatherCrudName + ", ";
+            _command += fatherCrudId + ", ";
+            _command += fatherCrudYearOfBirth + ", ";
+            _command += fatherCrudLastEducation + ", ";
+            _command += fatherCrudJob + ", ";
 
-            _command += fatherCrudName;
-            _command += fatherCrudId;
-            _command += fatherCrudYearOfBirth;
-            _command += fatherCrudLastEducation;
-            _command += fatherCrudJob;
+            _command += motherCrudName + ", ";
+            _command += motherCrudId + ", ";
+            _command += motherCrudYearOfBirth + ", ";
+            _command += motherCrudLastEducation + ", ";
+            _command += motherCrudJob + ", ";
 
-            _command += motherCrudName;
-            _command += motherCrudId;
-            _command += motherCrudYearOfBirth;
-            _command += motherCrudLastEducation;
-            _command += motherCrudJob;
+            _command += studentCrudTall + ", ";
+            _command += studentCrudWeight + ", ";
+            _command += studentCrudRange + ", ";
+            _command += studentCrudBrotherSisterCount + ", ";
 
             _command += studentCrudClass;
 
-            _command += studentCrudTall;
-            _command += studentCrudWeight;
-            _command += studentCrudRange;
-            _command += studentCrudBrotherSisterCount;*/
-
             _command += ") VALUES (";
 
-            /*_command += "'" + newStudent.id + "', ";
-            _command += "'" + newStudent.name + "', ";
+            for (int i = 0; i < 27; i++)
+            {
+                _command +=  "@param" + (i + 1).ToString();
+
+                if ((i + 1) < 27)
+                {
+                    _command += ",";
+                }
+            }
+
+            /*_command += "'" + newStudent.name + "', ";
+            _command += "'" + newStudent.gender + "', ";
+            _command += "'" + newStudent.id + "', ";
             _command += "'" + newStudent.bornPlace + "', ";
+            _command += "'" + newStudent.bornDate + "', ";
+            _command += "'" + newStudent.religion + "', ";
+            _command += "'" + newStudent.nation + "', ";
             _command += "'" + newStudent.address + "', ";
-            _command += "'" + newStudent.phoneNumber + "'";*/
-
-            _command += "@1, ";
-            _command += "@2, ";
-            _command += "@3, ";
-            _command += "@4, ";
-            _command += "@5";
-
-            /*_command += newStudent.name + ", ";
-            _command += newStudent.gender + ", ";
-            _command += newStudent.id + ", ";
-            _command += newStudent.bornPlace + ", ";
-            _command += newStudent.bornDate + ", ";
-            _command += newStudent.religion + ", ";
-            _command += newStudent.nation + ", ";
-            _command += newStudent.address + ", ";
-            _command += newStudent.livingWith + ", ";
+            _command += "'" + newStudent.livingWith + "', ";
             _command += newStudent.bornOrder + ", ";
             _command += newStudent.age + ", ";
-            _command += newStudent.phoneNumber + ", ";
+            _command += "'" + newStudent.phoneNumber + "', ";
 
-            _command += newStudent.fatherName + ", ";
-            _command += newStudent.fatherId + ", ";
-            _command += newStudent.fatherYearOfBirth + ", ";
-            _command += newStudent.fatherLastEducation + ", ";
-            _command += newStudent.fatherJob + ", ";
+            _command += "'" + newStudent.fatherName + "', ";
+            _command += "'" + newStudent.fatherId + "', ";
+            _command += "'" + newStudent.fatherYearOfBirth + "', ";
+            _command += "'" + newStudent.fatherLastEducation + "', ";
+            _command += "'" + newStudent.fatherJob + "', ";
 
-            _command += newStudent.motherName + ", ";
-            _command += newStudent.motherId + ", ";
-            _command += newStudent.motherYearOfBirth + ", ";
-            _command += newStudent.motherLastEducation + ", ";
-            _command += newStudent.motherJob + ", ";
+            _command += "'" + newStudent.motherName + "', ";
+            _command += "'" + newStudent.motherId + "', ";
+            _command += "'" + newStudent.motherYearOfBirth + "', ";
+            _command += "'" + newStudent.motherLastEducation + "', ";
+            _command += "'" + newStudent.motherJob + "', ";
 
             _command += newStudent.tall + ", ";
             _command += newStudent.weight + ", ";
             _command += newStudent.range + ", ";
             _command += newStudent.brotherSisterCount + ", ";
 
-            _command += newStudent.classGroup + ", ";*/
+            _command += "'" + newStudent.classGroup + "'";*/
 
-            _command += ");";
+            _command += ")";
 
             return _command;
         }
@@ -184,7 +180,7 @@ namespace Junior_School_Evaluation_Application
         {
             //:: ya karena pake access, menggunakan provider oledb
             return new OleDbConnection($"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={DatabasePath};Jet OLEDB:Database Password={DatabasePassword}");
-        }
+        } 
 
         public static string HashPassword(string password)
         {

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Junior_School_Evaluation_Application.Students.Models
+﻿namespace Junior_School_Evaluation_Application.Students.Models
 {
     public class StudentsDTO
     {

@@ -98,16 +98,16 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Students\Models\StudentsDTO.cs" />
-    <Compile Include="Students\Services\StudentsListInterfaces.cs">
+    <Compile Include="Students\Views\StudentsListInterfaces.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Students\Services\StudentsListInterfaces.Designer.cs">
+    <Compile Include="Students\Views\StudentsListInterfaces.Designer.cs">
       <DependentUpon>StudentsListInterfaces.cs</DependentUpon>
     </Compile>
-    <Compile Include="Students\Services\StudentsCRUDInterfaces.cs">
+    <Compile Include="Students\Views\StudentsCRUDInterfaces.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Students\Services\StudentsCRUDInterfaces.Designer.cs">
+    <Compile Include="Students\Views\StudentsCRUDInterfaces.Designer.cs">
       <DependentUpon>StudentsCRUDInterfaces.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
@@ -125,10 +125,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Students\Services\StudentsCRUDInterfaces.resx">
+    <EmbeddedResource Include="Students\Views\StudentsCRUDInterfaces.resx">
       <DependentUpon>StudentsCRUDInterfaces.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Students\Services\StudentsListInterfaces.resx">
+    <EmbeddedResource Include="Students\Views\StudentsListInterfaces.resx">
       <DependentUpon>StudentsListInterfaces.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSet1.xsc">

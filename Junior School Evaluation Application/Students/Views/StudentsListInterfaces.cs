@@ -26,17 +26,18 @@ namespace Junior_School_Evaluation_Application.Students.Services
             {
                 try
                 {
-                    //:: state oledbconnection harus di buka dulu dengan methode Open()
-                    connection.Open();
-
                     //:: variable oledbcommand dengan mengeksekusi perintah dari query dengan koneksi dari variable connection
                     OleDbCommand command = new OleDbCommand(DatabaseUtility.getViewStudentQuery(), connection);
 
                     DataTable dTable = new DataTable();
 
                     OleDbDataAdapter sqlAdpt = new OleDbDataAdapter(command);
-                    sqlAdpt.Fill(dTable);
 
+                    //:: state oledbconnection harus di buka dulu dengan methode Open()
+                    connection.Open(); 
+                    sqlAdpt.Fill(dTable); 
+                    connection.Close();
+                     
                     list_students.DataSource = dTable;
                 }
                 catch (Exception ex)
@@ -60,6 +61,7 @@ namespace Junior_School_Evaluation_Application.Students.Services
         private void btn_new_Click(object sender, EventArgs e)
         {
             StudentsCRUDInterfaces studentsCRUDInterfaces = new StudentsCRUDInterfaces();
+            studentsCRUDInterfaces.PerformActionWithCallback(message => Console.WriteLine("Received message: " + message));
             studentsCRUDInterfaces.ShowDialog();
         }
     }
