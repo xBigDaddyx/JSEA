@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.OleDb;
-using System.Linq;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Junior_School_Evaluation_Application
@@ -13,23 +8,24 @@ namespace Junior_School_Evaluation_Application
     {
         //:::: variable static dan readonly untuk nama database 
         private static readonly string DatabaseFileName = "master_db.accdb";
-        private const string DatabasePassword = "W@mb1s"; 
+        private const string DatabasePassword = "W@mb1s";
         public static string AuthUsername = "ID"; //:: kolom username
-        public static string AuthPassword = "Teacher_password"; //:: kolom password
-        public static string AuthTable = "Teachers"; //:: nama table untuk autentikasi
+        public static string AuthPassword = "password"; //:: kolom password
+        public static string AuthTable = "teachers"; //:: nama table untuk autentikasi
         //:::: variable static lokasi/path database berada
         public static string DatabasePath = System.IO.Path.Combine(Application.StartupPath, DatabaseFileName);
 
-        
+
         public static string GetLoginQuery()
         {
             return "SELECT " + AuthPassword + " FROM " + AuthTable + " where " + AuthUsername + " = @Username";
         }
         //:::: fungsi public untuk koneksi dengan database
-        public static OleDbConnection GetConnection()
+        public static string GetConnectionString()
         {
             //:: ya karena pake access, menggunakan provider oledb
-            return new OleDbConnection($"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={DatabasePath};Jet OLEDB:Database Password={DatabasePassword}");
+            //return new OleDbConnection($"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={DatabasePath};Jet OLEDB:Database Password={DatabasePassword}");
+            return "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + DatabasePath + ";Jet OLEDB:Database Password=" + DatabasePassword + "";
         }
         public static string HashPassword(string password)
         {
@@ -41,7 +37,7 @@ namespace Junior_School_Evaluation_Application
                 //:: membuat instansi variable baru untuk string builder
                 StringBuilder builder = new StringBuilder();
                 //:: setiap value dari variable byte akan di append/di gabung dalam sebuah string ke dalam variable builder
-                foreach(byte b in hashedBytes)
+                foreach (byte b in hashedBytes)
                 {
                     builder.Append(b.ToString("x2"));
                 }
