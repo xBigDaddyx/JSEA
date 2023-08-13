@@ -67,7 +67,7 @@ namespace Junior_School_Evaluation_Application
 
         public static string getViewStudentQuery()
         {
-            string _command = "SELECT " + studentCrudId + ", " + studentCrudName + ", " + studentCrudPhoneNumber + " FROM " + studentTable;
+            string _command = "SELECT " + studentCrudName + ", " + studentCrudClass + " FROM " + studentTable;
             return _command;
         }
 
@@ -99,27 +99,15 @@ namespace Junior_School_Evaluation_Application
             _command += motherCrudYearOfBirth + ", ";
             _command += motherCrudLastEducation + ", ";
             _command += motherCrudJob + ", ";
-
             _command += studentCrudTall + ", ";
             _command += studentCrudWeight + ", ";
             _command += studentCrudRange + ", ";
             _command += studentCrudBrotherSisterCount + ", ";
-
             _command += studentCrudClass;
 
             _command += ") VALUES (";
 
-            for (int i = 0; i < 27; i++)
-            {
-                _command +=  "@param" + (i + 1).ToString();
-
-                if ((i + 1) < 27)
-                {
-                    _command += ",";
-                }
-            }
-
-            /*_command += "'" + newStudent.name + "', ";
+            _command += "'" + newStudent.name + "', ";
             _command += "'" + newStudent.gender + "', ";
             _command += "'" + newStudent.id + "', ";
             _command += "'" + newStudent.bornPlace + "', ";
@@ -149,7 +137,7 @@ namespace Junior_School_Evaluation_Application
             _command += newStudent.range + ", ";
             _command += newStudent.brotherSisterCount + ", ";
 
-            _command += "'" + newStudent.classGroup + "'";*/
+            _command += "'" + newStudent.classGroup + "'";
 
             _command += ")";
 

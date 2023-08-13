@@ -1,6 +1,6 @@
 ﻿namespace Junior_School_Evaluation_Application
 {
-    partial class StudentsCRUDInterfaces
+    partial class StudentsCRUD
     {
         /// <summary>
         /// Required designer variable.
@@ -82,6 +82,8 @@
             this.combo_class = new System.Windows.Forms.ComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.num_tall = new System.Windows.Forms.NumericUpDown();
             this.numb_weight = new System.Windows.Forms.NumericUpDown();
@@ -91,8 +93,6 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numb_born_order)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numb_age)).BeginInit();
@@ -113,7 +113,7 @@
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(18, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 23);
+            this.label1.Size = new System.Drawing.Size(115, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nama Lengkap";
             // 
@@ -123,9 +123,9 @@
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(18, 138);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 23);
+            this.label2.Size = new System.Drawing.Size(39, 18);
             this.label2.TabIndex = 3;
-            this.label2.Text = "NIK";
+            this.label2.Text = "NIK*";
             // 
             // label4
             // 
@@ -133,7 +133,7 @@
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(18, 301);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 23);
+            this.label4.Size = new System.Drawing.Size(137, 18);
             this.label4.TabIndex = 7;
             this.label4.Text = "Kewarganegaraan";
             // 
@@ -143,7 +143,7 @@
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(18, 98);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 23);
+            this.label5.Size = new System.Drawing.Size(106, 18);
             this.label5.TabIndex = 9;
             this.label5.Text = "Jenis Kelamin";
             // 
@@ -153,7 +153,7 @@
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(18, 178);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 23);
+            this.label6.Size = new System.Drawing.Size(98, 18);
             this.label6.TabIndex = 11;
             this.label6.Text = "Tempat Lahir";
             // 
@@ -163,7 +163,7 @@
             this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(18, 264);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 23);
+            this.label7.Size = new System.Drawing.Size(59, 18);
             this.label7.TabIndex = 14;
             this.label7.Text = "Agama";
             // 
@@ -173,7 +173,7 @@
             this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(18, 418);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 23);
+            this.label9.Size = new System.Drawing.Size(68, 18);
             this.label9.TabIndex = 18;
             this.label9.Text = "Anak Ke";
             // 
@@ -183,7 +183,7 @@
             this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(18, 338);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(152, 23);
+            this.label10.Size = new System.Drawing.Size(122, 18);
             this.label10.TabIndex = 25;
             this.label10.Text = "Alamat Lengkap";
             // 
@@ -193,7 +193,7 @@
             this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(18, 378);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(157, 23);
+            this.label8.Size = new System.Drawing.Size(126, 18);
             this.label8.TabIndex = 27;
             this.label8.Text = "Tinggal Bersama";
             // 
@@ -203,7 +203,7 @@
             this.label11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(18, 221);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(127, 23);
+            this.label11.Size = new System.Drawing.Size(101, 18);
             this.label11.TabIndex = 29;
             this.label11.Text = "Tanggal Lahir";
             // 
@@ -213,7 +213,7 @@
             this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(18, 457);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(48, 23);
+            this.label12.Size = new System.Drawing.Size(40, 18);
             this.label12.TabIndex = 30;
             this.label12.Text = "Usia";
             // 
@@ -223,7 +223,7 @@
             this.label14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(18, 494);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(72, 23);
+            this.label14.Size = new System.Drawing.Size(58, 18);
             this.label14.TabIndex = 33;
             this.label14.Text = "No. HP";
             // 
@@ -233,7 +233,7 @@
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(18, 38);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 23);
+            this.label3.Size = new System.Drawing.Size(88, 18);
             this.label3.TabIndex = 1;
             this.label3.Text = "Nama Ayah";
             // 
@@ -256,7 +256,7 @@
             this.label13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(18, 78);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(42, 23);
+            this.label13.Size = new System.Drawing.Size(33, 18);
             this.label13.TabIndex = 9;
             this.label13.Text = "NIK";
             // 
@@ -266,7 +266,7 @@
             this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(18, 118);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(110, 23);
+            this.label16.Size = new System.Drawing.Size(87, 18);
             this.label16.TabIndex = 29;
             this.label16.Text = "Tahun Lahir";
             // 
@@ -289,7 +289,7 @@
             this.txt_father_name.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_father_name.Location = new System.Drawing.Point(195, 38);
             this.txt_father_name.Name = "txt_father_name";
-            this.txt_father_name.Size = new System.Drawing.Size(330, 29);
+            this.txt_father_name.Size = new System.Drawing.Size(330, 23);
             this.txt_father_name.TabIndex = 0;
             // 
             // year_of_father_born
@@ -300,7 +300,7 @@
             this.year_of_father_born.Location = new System.Drawing.Point(195, 116);
             this.year_of_father_born.Name = "year_of_father_born";
             this.year_of_father_born.ShowUpDown = true;
-            this.year_of_father_born.Size = new System.Drawing.Size(82, 30);
+            this.year_of_father_born.Size = new System.Drawing.Size(82, 26);
             this.year_of_father_born.TabIndex = 38;
             // 
             // txt_father_id
@@ -309,7 +309,7 @@
             this.txt_father_id.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_father_id.Location = new System.Drawing.Point(195, 77);
             this.txt_father_id.Name = "txt_father_id";
-            this.txt_father_id.Size = new System.Drawing.Size(330, 29);
+            this.txt_father_id.Size = new System.Drawing.Size(330, 23);
             this.txt_father_id.TabIndex = 40;
             // 
             // groupBox1
@@ -354,7 +354,7 @@
             this.date_picker_born_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_picker_born_date.Location = new System.Drawing.Point(196, 215);
             this.date_picker_born_date.Name = "date_picker_born_date";
-            this.date_picker_born_date.Size = new System.Drawing.Size(173, 36);
+            this.date_picker_born_date.Size = new System.Drawing.Size(173, 30);
             this.date_picker_born_date.TabIndex = 41;
             this.date_picker_born_date.Value = new System.DateTime(2023, 8, 12, 23, 51, 30, 0);
             // 
@@ -364,7 +364,7 @@
             this.txt_phone.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_phone.Location = new System.Drawing.Point(196, 489);
             this.txt_phone.Name = "txt_phone";
-            this.txt_phone.Size = new System.Drawing.Size(330, 29);
+            this.txt_phone.Size = new System.Drawing.Size(330, 23);
             this.txt_phone.TabIndex = 0;
             // 
             // numb_born_order
@@ -374,7 +374,7 @@
             this.numb_born_order.Hexadecimal = true;
             this.numb_born_order.Location = new System.Drawing.Point(196, 415);
             this.numb_born_order.Name = "numb_born_order";
-            this.numb_born_order.Size = new System.Drawing.Size(65, 26);
+            this.numb_born_order.Size = new System.Drawing.Size(65, 22);
             this.numb_born_order.TabIndex = 22;
             this.numb_born_order.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -384,7 +384,7 @@
             this.txt_born_place.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_born_place.Location = new System.Drawing.Point(196, 175);
             this.txt_born_place.Name = "txt_born_place";
-            this.txt_born_place.Size = new System.Drawing.Size(330, 29);
+            this.txt_born_place.Size = new System.Drawing.Size(330, 23);
             this.txt_born_place.TabIndex = 6;
             // 
             // txt_living_with
@@ -393,7 +393,7 @@
             this.txt_living_with.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_living_with.Location = new System.Drawing.Point(196, 377);
             this.txt_living_with.Name = "txt_living_with";
-            this.txt_living_with.Size = new System.Drawing.Size(330, 29);
+            this.txt_living_with.Size = new System.Drawing.Size(330, 23);
             this.txt_living_with.TabIndex = 28;
             // 
             // numb_age
@@ -402,7 +402,7 @@
             this.numb_age.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numb_age.Location = new System.Drawing.Point(196, 452);
             this.numb_age.Name = "numb_age";
-            this.numb_age.Size = new System.Drawing.Size(65, 26);
+            this.numb_age.Size = new System.Drawing.Size(65, 22);
             this.numb_age.TabIndex = 31;
             this.numb_age.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -412,7 +412,7 @@
             this.txt_id_student.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_id_student.Location = new System.Drawing.Point(196, 137);
             this.txt_id_student.Name = "txt_id_student";
-            this.txt_id_student.Size = new System.Drawing.Size(330, 29);
+            this.txt_id_student.Size = new System.Drawing.Size(330, 23);
             this.txt_id_student.TabIndex = 2;
             // 
             // txt_address
@@ -421,7 +421,7 @@
             this.txt_address.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_address.Location = new System.Drawing.Point(196, 339);
             this.txt_address.Name = "txt_address";
-            this.txt_address.Size = new System.Drawing.Size(330, 29);
+            this.txt_address.Size = new System.Drawing.Size(330, 23);
             this.txt_address.TabIndex = 26;
             // 
             // txt_nation
@@ -430,7 +430,7 @@
             this.txt_nation.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nation.Location = new System.Drawing.Point(196, 301);
             this.txt_nation.Name = "txt_nation";
-            this.txt_nation.Size = new System.Drawing.Size(330, 29);
+            this.txt_nation.Size = new System.Drawing.Size(330, 23);
             this.txt_nation.TabIndex = 24;
             // 
             // combo_religion
@@ -447,7 +447,7 @@
             "Konghucu"});
             this.combo_religion.Location = new System.Drawing.Point(196, 260);
             this.combo_religion.Name = "combo_religion";
-            this.combo_religion.Size = new System.Drawing.Size(150, 31);
+            this.combo_religion.Size = new System.Drawing.Size(150, 26);
             this.combo_religion.TabIndex = 15;
             // 
             // txt_name
@@ -456,7 +456,7 @@
             this.txt_name.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_name.Location = new System.Drawing.Point(196, 58);
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(330, 29);
+            this.txt_name.Size = new System.Drawing.Size(330, 23);
             this.txt_name.TabIndex = 0;
             // 
             // combo_gender
@@ -469,7 +469,7 @@
             "Perempuan"});
             this.combo_gender.Location = new System.Drawing.Point(196, 96);
             this.combo_gender.Name = "combo_gender";
-            this.combo_gender.Size = new System.Drawing.Size(150, 31);
+            this.combo_gender.Size = new System.Drawing.Size(150, 26);
             this.combo_gender.TabIndex = 13;
             // 
             // groupBox2
@@ -512,7 +512,7 @@
             this.label20.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(18, 33);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(94, 23);
+            this.label20.Size = new System.Drawing.Size(74, 18);
             this.label20.TabIndex = 46;
             this.label20.Text = "Nama Ibu";
             // 
@@ -522,7 +522,7 @@
             this.txt_mother_job.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_mother_job.Location = new System.Drawing.Point(195, 192);
             this.txt_mother_job.Name = "txt_mother_job";
-            this.txt_mother_job.Size = new System.Drawing.Size(330, 29);
+            this.txt_mother_job.Size = new System.Drawing.Size(330, 23);
             this.txt_mother_job.TabIndex = 54;
             // 
             // txt_mother_name
@@ -531,7 +531,7 @@
             this.txt_mother_name.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_mother_name.Location = new System.Drawing.Point(195, 33);
             this.txt_mother_name.Name = "txt_mother_name";
-            this.txt_mother_name.Size = new System.Drawing.Size(330, 29);
+            this.txt_mother_name.Size = new System.Drawing.Size(330, 23);
             this.txt_mother_name.TabIndex = 45;
             // 
             // label18
@@ -540,7 +540,7 @@
             this.label18.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(18, 193);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(98, 23);
+            this.label18.Size = new System.Drawing.Size(79, 18);
             this.label18.TabIndex = 53;
             this.label18.Text = "Pekerjaan";
             // 
@@ -550,7 +550,7 @@
             this.label22.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(18, 113);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(110, 23);
+            this.label22.Size = new System.Drawing.Size(87, 18);
             this.label22.TabIndex = 48;
             this.label22.Text = "Tahun Lahir";
             // 
@@ -560,7 +560,7 @@
             this.txt_mother_education.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_mother_education.Location = new System.Drawing.Point(195, 153);
             this.txt_mother_education.Name = "txt_mother_education";
-            this.txt_mother_education.Size = new System.Drawing.Size(330, 29);
+            this.txt_mother_education.Size = new System.Drawing.Size(330, 23);
             this.txt_mother_education.TabIndex = 52;
             // 
             // label21
@@ -569,7 +569,7 @@
             this.label21.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(18, 73);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(42, 23);
+            this.label21.Size = new System.Drawing.Size(33, 18);
             this.label21.TabIndex = 47;
             this.label21.Text = "NIK";
             // 
@@ -579,7 +579,7 @@
             this.label19.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(18, 153);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(105, 23);
+            this.label19.Size = new System.Drawing.Size(87, 18);
             this.label19.TabIndex = 51;
             this.label19.Text = "Pendidikan";
             // 
@@ -591,7 +591,7 @@
             this.year_of_mother_born.Location = new System.Drawing.Point(195, 111);
             this.year_of_mother_born.Name = "year_of_mother_born";
             this.year_of_mother_born.ShowUpDown = true;
-            this.year_of_mother_born.Size = new System.Drawing.Size(82, 30);
+            this.year_of_mother_born.Size = new System.Drawing.Size(82, 26);
             this.year_of_mother_born.TabIndex = 49;
             // 
             // txt_mother_id
@@ -600,7 +600,7 @@
             this.txt_mother_id.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_mother_id.Location = new System.Drawing.Point(195, 72);
             this.txt_mother_id.Name = "txt_mother_id";
-            this.txt_mother_id.Size = new System.Drawing.Size(330, 29);
+            this.txt_mother_id.Size = new System.Drawing.Size(330, 23);
             this.txt_mother_id.TabIndex = 50;
             // 
             // groupBox3
@@ -630,7 +630,7 @@
             this.txt_father_job.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_father_job.Location = new System.Drawing.Point(195, 197);
             this.txt_father_job.Name = "txt_father_job";
-            this.txt_father_job.Size = new System.Drawing.Size(330, 29);
+            this.txt_father_job.Size = new System.Drawing.Size(330, 23);
             this.txt_father_job.TabIndex = 44;
             // 
             // label15
@@ -639,7 +639,7 @@
             this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(18, 158);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(105, 23);
+            this.label15.Size = new System.Drawing.Size(87, 18);
             this.label15.TabIndex = 41;
             this.label15.Text = "Pendidikan";
             // 
@@ -649,7 +649,7 @@
             this.txt_father_education.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_father_education.Location = new System.Drawing.Point(195, 158);
             this.txt_father_education.Name = "txt_father_education";
-            this.txt_father_education.Size = new System.Drawing.Size(330, 29);
+            this.txt_father_education.Size = new System.Drawing.Size(330, 23);
             this.txt_father_education.TabIndex = 42;
             // 
             // label17
@@ -658,7 +658,7 @@
             this.label17.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(18, 198);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(98, 23);
+            this.label17.Size = new System.Drawing.Size(79, 18);
             this.label17.TabIndex = 43;
             this.label17.Text = "Pekerjaan";
             // 
@@ -668,7 +668,7 @@
             this.label23.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(17, 41);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(123, 23);
+            this.label23.Size = new System.Drawing.Size(98, 18);
             this.label23.TabIndex = 41;
             this.label23.Text = "Masuk Kelas";
             // 
@@ -685,7 +685,7 @@
             "Bintang"});
             this.combo_class.Location = new System.Drawing.Point(195, 37);
             this.combo_class.Name = "combo_class";
-            this.combo_class.Size = new System.Drawing.Size(364, 31);
+            this.combo_class.Size = new System.Drawing.Size(364, 26);
             this.combo_class.TabIndex = 42;
             // 
             // groupBox5
@@ -723,13 +723,33 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Periodik";
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(323, 128);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(21, 18);
+            this.label30.TabIndex = 66;
+            this.label30.Text = "m";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(323, 50);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(29, 18);
+            this.label29.TabIndex = 65;
+            this.label29.Text = "cm";
+            // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(323, 87);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(31, 23);
+            this.label28.Size = new System.Drawing.Size(25, 18);
             this.label28.TabIndex = 64;
             this.label28.Text = "kg";
             // 
@@ -744,7 +764,7 @@
             0,
             0});
             this.num_tall.Name = "num_tall";
-            this.num_tall.Size = new System.Drawing.Size(118, 26);
+            this.num_tall.Size = new System.Drawing.Size(118, 22);
             this.num_tall.TabIndex = 61;
             this.num_tall.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -754,7 +774,7 @@
             this.numb_weight.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numb_weight.Location = new System.Drawing.Point(199, 84);
             this.numb_weight.Name = "numb_weight";
-            this.numb_weight.Size = new System.Drawing.Size(118, 26);
+            this.numb_weight.Size = new System.Drawing.Size(118, 22);
             this.numb_weight.TabIndex = 60;
             this.numb_weight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -764,7 +784,7 @@
             this.numb_range.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numb_range.Location = new System.Drawing.Point(199, 126);
             this.numb_range.Name = "numb_range";
-            this.numb_range.Size = new System.Drawing.Size(118, 26);
+            this.numb_range.Size = new System.Drawing.Size(118, 22);
             this.numb_range.TabIndex = 59;
             this.numb_range.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -774,7 +794,7 @@
             this.numb_brother_sister.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numb_brother_sister.Location = new System.Drawing.Point(199, 165);
             this.numb_brother_sister.Name = "numb_brother_sister";
-            this.numb_brother_sister.Size = new System.Drawing.Size(118, 26);
+            this.numb_brother_sister.Size = new System.Drawing.Size(118, 22);
             this.numb_brother_sister.TabIndex = 58;
             this.numb_brother_sister.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -784,7 +804,7 @@
             this.label27.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(22, 166);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(151, 23);
+            this.label27.Size = new System.Drawing.Size(121, 18);
             this.label27.TabIndex = 57;
             this.label27.Text = "Jumlah Saudara";
             // 
@@ -794,7 +814,7 @@
             this.label26.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(22, 127);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(133, 23);
+            this.label26.Size = new System.Drawing.Size(105, 18);
             this.label26.TabIndex = 55;
             this.label26.Text = "Jarak Tempuh";
             // 
@@ -804,7 +824,7 @@
             this.label24.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(22, 48);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(123, 23);
+            this.label24.Size = new System.Drawing.Size(100, 18);
             this.label24.TabIndex = 52;
             this.label24.Text = "Tinggi Badan";
             // 
@@ -814,31 +834,11 @@
             this.label25.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(22, 88);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(120, 23);
+            this.label25.Size = new System.Drawing.Size(96, 18);
             this.label25.TabIndex = 53;
             this.label25.Text = "Berat Badan";
             // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(323, 50);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(36, 23);
-            this.label29.TabIndex = 65;
-            this.label29.Text = "cm";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(323, 128);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(26, 23);
-            this.label30.TabIndex = 66;
-            this.label30.Text = "m";
-            // 
-            // StudentsCRUDInterfaces
+            // StudentsCRUD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -851,11 +851,13 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.btn_cancel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "StudentsCRUDInterfaces";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Name = "StudentsCRUD";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tambahkan Siswa Baru";
-            this.Load += new System.EventHandler(this.Students_Load);
+            this.TopMost = true;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numb_born_order)).EndInit();

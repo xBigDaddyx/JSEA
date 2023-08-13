@@ -17,7 +17,7 @@ namespace Junior_School_Evaluation_Application
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StudentsListInterfaces());
+            Application.Run(new StudentsList());
         }
     }
 }
