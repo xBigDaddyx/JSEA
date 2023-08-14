@@ -2,6 +2,7 @@
 using System.Data.OleDb;
 using System.Data;
 using System.Windows.Forms;
+using Junior_School_Evaluation_Application.Students.Models;
 
 namespace Junior_School_Evaluation_Application.Students.Services
 {
@@ -27,7 +28,12 @@ namespace Junior_School_Evaluation_Application.Students.Services
 
                     //:: state oledbconnection harus di buka dulu dengan methode Open()
                     connection.Open();
+                    
                     sqlAdpt.Fill(dTable);
+                     
+                    dTable.Columns[1].ColumnName = "Nama";
+                    dTable.Columns[2].ColumnName = "Kelas";
+
                     connection.Close();
                     gridView.DataSource = dTable;
                 }
@@ -46,6 +52,17 @@ namespace Junior_School_Evaluation_Application.Students.Services
                     this.bindData(gridView);
                     this.showMessageBox("Sukses", message);
             });
+            studentsCRUDInterfaces.Show(); 
+        }
+        
+        public void editStudent(DataGridView gridView, StudentsDTO targetStudent)
+        {
+            StudentsCRUD studentsCRUDInterfaces = new StudentsCRUD(message =>
+            {
+                    this.bindData(gridView);
+                    this.showMessageBox("Sukses", message);
+            });
+            studentsCRUDInterfaces.setEditData(targetStudent);
             studentsCRUDInterfaces.Show(); 
         }
 

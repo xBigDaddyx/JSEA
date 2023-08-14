@@ -1,4 +1,5 @@
-﻿using Junior_School_Evaluation_Application.Students.Services;
+﻿using Junior_School_Evaluation_Application.Students.Models;
+using Junior_School_Evaluation_Application.Students.Services;
 using System;
 using System.Data.OleDb;
 using System.Windows.Forms;
@@ -18,6 +19,14 @@ namespace Junior_School_Evaluation_Application
             services = new StudentsService();
             _callback = callback;
         }
+
+        public void setEditData(StudentsDTO targetStudent)
+        {
+            txt_name.Text = targetStudent.name;
+            txt_id_student.Text = targetStudent.id;
+            combo_class.Text = targetStudent.classGroup;
+        }
+
         private bool validateInput()
         {
             //:: logic jika field username dan password itu kosong atau ada spasi maka return false dan menampilkan messagebox
@@ -32,6 +41,7 @@ namespace Junior_School_Evaluation_Application
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+            this.Dispose();
         }
          
         private void btn_save_Click_1(object sender, EventArgs e)
