@@ -30,12 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_new = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.list_students = new System.Windows.Forms.DataGridView();
             this.btn_exit = new System.Windows.Forms.Button();
             this.dataSet1 = new Junior_School_Evaluation_Application.DataSet1();
             this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.col_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_class = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.list_students)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
@@ -75,15 +79,34 @@
             this.list_students.AllowUserToResizeRows = false;
             this.list_students.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.list_students.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.list_students.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 24F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.list_students.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.list_students.ColumnHeadersHeight = 50;
+            this.list_students.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.col_name,
+            this.col_class});
             this.list_students.Location = new System.Drawing.Point(17, 129);
             this.list_students.Name = "list_students";
             this.list_students.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.NullValue = "- belum ada data -";
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.list_students.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.list_students.RowHeadersVisible = false;
             this.list_students.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 12F);
-            this.list_students.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 12F);
+            this.list_students.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.list_students.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.list_students.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(5);
             this.list_students.RowTemplate.Height = 40;
@@ -116,7 +139,19 @@
             this.dataSet1BindingSource.DataSource = this.dataSet1;
             this.dataSet1BindingSource.Position = 0;
             // 
-            // StudentsListInterfaces
+            // col_name
+            // 
+            this.col_name.HeaderText = "Nama";
+            this.col_name.Name = "col_name";
+            this.col_name.ReadOnly = true;
+            // 
+            // col_class
+            // 
+            this.col_class.HeaderText = "Kelas";
+            this.col_class.Name = "col_class";
+            this.col_class.ReadOnly = true;
+            // 
+            // StudentsList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -125,7 +160,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_exit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "StudentsListInterfaces";
+            this.Name = "StudentsList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Students";
             this.Load += new System.EventHandler(this.StudentsListInterfaces_Load);
@@ -145,5 +180,7 @@
         private System.Windows.Forms.DataGridView list_students;
         private System.Windows.Forms.BindingSource dataSet1BindingSource;
         private DataSet1 dataSet1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_class;
     }
 }

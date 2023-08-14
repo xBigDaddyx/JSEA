@@ -8,18 +8,19 @@ namespace Junior_School_Evaluation_Application.Students.Services
     {
         private Timer fadeTimer;
         private int fadeStep = 10;
-        private Label TitleLabel;
-        private Label MessageLabel;
         private Button btn_ok;
+        private Label lbl_title;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Label lbl_msg;
         private int showStep = 0;
 
-        public CustomMessageBox(string message, string title)
+        public CustomMessageBox(string title, string message)
         {
             InitializeComponent();
 
-            TitleLabel.Text = title;
-            MessageLabel.Text = message;
-
+            lbl_title.Text = title;
+            lbl_msg.Text = message;
+             
             // Inisialisasi timer
             fadeTimer = new Timer();
             fadeTimer.Interval = 5; // 5 milliseconds
@@ -61,125 +62,102 @@ namespace Junior_School_Evaluation_Application.Students.Services
             }
 
             fadeStep--;
-        }
-
-        /*private Label TitleLabel;
-        private Label MessageLabel;
-        private Button OKButton;*/
-
-       /* private void InitializeComponent()
-        {
-            this.TitleLabel = new System.Windows.Forms.Label();
-            this.MessageLabel = new System.Windows.Forms.Label();
-            this.OKButton = new System.Windows.Forms.Button();
-            this.SuspendLayout();
-            // 
-            // TitleLabel
-            // 
-            this.TitleLabel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleLabel.Location = new System.Drawing.Point(12, 9);
-            this.TitleLabel.Name = "TitleLabel";
-            this.TitleLabel.Size = new System.Drawing.Size(376, 30);
-            this.TitleLabel.TabIndex = 0;
-            this.TitleLabel.Text = "Title";
-            this.TitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // MessageLabel
-            // 
-            this.MessageLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MessageLabel.Location = new System.Drawing.Point(12, 39);
-            this.MessageLabel.Name = "MessageLabel";
-            this.MessageLabel.Size = new System.Drawing.Size(376, 120);
-            this.MessageLabel.TabIndex = 1;
-            this.MessageLabel.Text = "Message";
-            this.MessageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // OKButton
-            // 
-            this.OKButton.Location = new System.Drawing.Point(162, 174);
-            this.OKButton.Name = "OKButton";
-            this.OKButton.Size = new System.Drawing.Size(75, 30);
-            this.OKButton.TabIndex = 2;
-            this.OKButton.Text = "OK";
-            this.OKButton.UseVisualStyleBackColor = true;
-            this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
-            // 
-            // CustomMessageBox
-            // 
-            this.ClientSize = new System.Drawing.Size(400, 216);
-            this.Controls.Add(this.OKButton);
-            this.Controls.Add(this.MessageLabel);
-            this.Controls.Add(this.TitleLabel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "CustomMessageBox";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.ResumeLayout(false);
-
-        }*/
-
-        private void OKButton_Click(object sender, EventArgs e)
-        {
-        }
+        } 
 
         private void InitializeComponent()
         {
-            this.TitleLabel = new System.Windows.Forms.Label();
-            this.MessageLabel = new System.Windows.Forms.Label();
             this.btn_ok = new System.Windows.Forms.Button();
+            this.lbl_title = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbl_msg = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // TitleLabel
-            // 
-            this.TitleLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TitleLabel.AutoSize = true;
-            this.TitleLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleLabel.Location = new System.Drawing.Point(159, 45);
-            this.TitleLabel.Name = "TitleLabel";
-            this.TitleLabel.Size = new System.Drawing.Size(65, 22);
-            this.TitleLabel.TabIndex = 0;
-            this.TitleLabel.Text = "label1";
-            this.TitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // MessageLabel
-            // 
-            this.MessageLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.MessageLabel.AutoSize = true;
-            this.MessageLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MessageLabel.Location = new System.Drawing.Point(166, 118);
-            this.MessageLabel.Name = "MessageLabel";
-            this.MessageLabel.Size = new System.Drawing.Size(50, 18);
-            this.MessageLabel.TabIndex = 1;
-            this.MessageLabel.Text = "label2";
-            this.MessageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_ok
             // 
+            this.btn_ok.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_ok.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_ok.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_ok.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_ok.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ok.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_ok.Location = new System.Drawing.Point(116, 173);
+            this.btn_ok.Location = new System.Drawing.Point(115, 161);
             this.btn_ok.Name = "btn_ok";
             this.btn_ok.Size = new System.Drawing.Size(150, 60);
-            this.btn_ok.TabIndex = 22;
-            this.btn_ok.Text = "Simpan";
+            this.btn_ok.TabIndex = 0;
+            this.btn_ok.TabStop = false;
+            this.btn_ok.Text = "OK";
             this.btn_ok.UseVisualStyleBackColor = false;
-            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
+            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click_1);
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_title.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.Location = new System.Drawing.Point(151, 8);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(78, 29);
+            this.lbl_title.TabIndex = 1;
+            this.lbl_title.Text = "Judul";
+            this.lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.Controls.Add(this.lbl_title, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_msg, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btn_ok, 1, 2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 7);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.93464F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.38562F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.67974F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(380, 230);
+            this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // lbl_msg
+            // 
+            this.lbl_msg.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_msg.AutoSize = true;
+            this.lbl_msg.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_msg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_msg.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_msg.Location = new System.Drawing.Point(131, 90);
+            this.lbl_msg.Name = "lbl_msg";
+            this.lbl_msg.Size = new System.Drawing.Size(118, 18);
+            this.lbl_msg.TabIndex = 2;
+            this.lbl_msg.Text = "..isi dari pesan..";
+            this.lbl_msg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CustomMessageBox
             // 
-            this.ClientSize = new System.Drawing.Size(399, 261);
-            this.Controls.Add(this.btn_ok);
-            this.Controls.Add(this.MessageLabel);
-            this.Controls.Add(this.TitleLabel);
-            this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.AcceptButton = this.btn_ok;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(394, 244);
+            this.ControlBox = false;
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CustomMessageBox";
+            this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.TopMost = true;
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -188,6 +166,12 @@ namespace Junior_School_Evaluation_Application.Students.Services
             // Animasi fade-out saat tombol OK ditekan
             fadeStep = 10;
             fadeTimer.Start();
+        }
+
+        private void btn_ok_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+            this.Dispose();
         }
     }
 }

@@ -83,7 +83,7 @@ namespace Junior_School_Evaluation_Application
 
                     //:: state oledbconnection harus di buka dulu dengan methode Open()
                     connection.Open(); 
-                    command.ExecuteScalar(); 
+                    command.ExecuteNonQuery(); 
                     connection.Close();
 
                     this.Close();

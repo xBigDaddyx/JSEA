@@ -52,8 +52,7 @@ namespace Junior_School_Evaluation_Application.Students.Services
          // Custom Message Box -----------------------------------------------------------
         public void showMessageBox(string title, string msg)
         {
-            var customMessageBox = new CustomMessageBox(msg, title);
-            customMessageBox.StartPosition = FormStartPosition.CenterParent;
+            var customMessageBox = new CustomMessageBox(title, msg);
             customMessageBox.Show(); 
         }
     }
