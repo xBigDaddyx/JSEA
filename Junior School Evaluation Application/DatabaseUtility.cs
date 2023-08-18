@@ -68,7 +68,21 @@ namespace Junior_School_Evaluation_Application
 
         public static string getViewStudentQuery()
         {
-            string _command = "SELECT " + studentCrudId + ", " + studentCrudName + ", " + studentCrudClass + " FROM " + studentTable;
+            string _command = "SELECT ";
+
+            _command += studentCrudId + ", ";
+            _command += studentCrudName + ", ";
+            _command += studentCrudPhoneNumber + ", ";
+            _command += studentCrudClass;
+
+            _command += " FROM " + studentTable;
+
+            return _command;
+        }
+        
+        public static string getViewStudentSpesificQuery(string id)
+        {
+            string _command = "SELECT * FROM " + studentTable + " WHERE " + studentCrudId + " = '" + id + "'";
             return _command;
         }
 
@@ -135,7 +149,7 @@ namespace Junior_School_Evaluation_Application
 
             _command += newStudent.tall + ", ";
             _command += newStudent.weight + ", ";
-            _command += newStudent.range + ", ";
+            _command += "'" + newStudent.range + "', ";
             _command += newStudent.brotherSisterCount + ", ";
 
             _command += "'" + newStudent.classGroup + "'";
@@ -145,18 +159,51 @@ namespace Junior_School_Evaluation_Application
             return _command;
         }
         
-        public static string getUpdateStudentQuery(string tblColName, string id, string newValue)
+        public static string getUpdateStudentQuery(Students.Models.StudentsDTO targetStudent)
         {
-            string _command = "UPDATE " + studentTable;
-            _command += " SET " + tblColName + " = " + newValue;
-            _command += " WHERE " + studentCrudId + " = " + id;
+            string _command = "UPDATE " + studentTable + " SET ";
+
+            _command += studentCrudName + " = '" + targetStudent.name + "', ";
+            _command += studentCrudGender + " = '" + targetStudent.gender + "', ";
+            /*_command += studentCrudId + " = '" + targetStudent.id + "', ";*/
+            _command += studentCrudBirthPlace + " = '" + targetStudent.bornPlace + "', ";
+            _command += studentCrudBirthDate + " = '" + targetStudent.bornDate + "', ";
+            _command += studentCrudReligion + " = '" + targetStudent.religion + "', ";
+            _command += studentCrudNation + " = '" + targetStudent.nation + "', ";
+            _command += studentCrudAddress + " = '" + targetStudent.address + "', ";
+            _command += studentCrudHouseWith + " = '" + targetStudent.livingWith + "', ";
+            _command += studentCrudBirthOrder + " = " + targetStudent.bornOrder + ", ";
+            _command += studentCrudAge + " = " + targetStudent.age + ", ";
+            _command += studentCrudPhoneNumber + " = '" + targetStudent.phoneNumber + "', ";
+
+            _command += fatherCrudName + " = '" + targetStudent.fatherName + "', ";
+            _command += fatherCrudId + " = '" + targetStudent.fatherId + "', ";
+            _command += fatherCrudYearOfBirth + " = '" + targetStudent.fatherYearOfBirth + "', ";
+            _command += fatherCrudLastEducation + " = '" + targetStudent.fatherLastEducation + "', ";
+            _command += fatherCrudJob + " = '" + targetStudent.fatherJob + "', ";
+
+            _command += motherCrudName + " = '" + targetStudent.motherName + "', ";
+            _command += motherCrudId + " = '" + targetStudent.motherId + "', ";
+            _command += motherCrudYearOfBirth + " = '" + targetStudent.motherYearOfBirth + "', ";
+            _command += motherCrudLastEducation + " = '" + targetStudent.motherLastEducation + "', ";
+            _command += motherCrudJob + " = '" + targetStudent.motherJob + "', ";
+
+            _command += studentCrudTall + " = " + targetStudent.tall + ", ";
+            _command += studentCrudWeight + " = " + targetStudent.weight + ", ";
+            _command += studentCrudRange + " = '" + targetStudent.range + "', ";
+            _command += studentCrudBrotherSisterCount + " = " + targetStudent.brotherSisterCount + ", ";
+
+            _command += studentCrudClass + " = '" + targetStudent.classGroup + "'";
+              
+            _command += " WHERE " + studentCrudId + " = '" + targetStudent.id + "'";
+
             return _command;
         }
 
-        public static string getDeleteStudentQuery(string tblColName, string id)
+        public static string getDeleteStudentQuery(string id)
         {
             string _command = "DELETE FROM " + studentTable;
-            _command += " WHERE " + studentCrudId + " = " + id;
+            _command += " WHERE " + studentCrudId + " = '" + id + "'";
             return _command;
         }
 

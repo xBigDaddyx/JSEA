@@ -8,6 +8,8 @@ namespace Junior_School_Evaluation_Application
 {
     public partial class StudentsCRUD : Form
     {
+        private bool updateMode = false;
+
         private StudentsService services;
 
         private Action<string> _callback;
@@ -22,9 +24,41 @@ namespace Junior_School_Evaluation_Application
 
         public void setEditData(StudentsDTO targetStudent)
         {
+            updateMode = true;
+
             txt_name.Text = targetStudent.name;
+            combo_gender.Text = targetStudent.gender;
             txt_id_student.Text = targetStudent.id;
+            txt_born_place.Text = targetStudent.bornPlace;
+            date_picker_born_date.Text = targetStudent.bornDate;
+            combo_religion.Text = targetStudent.religion;
+            txt_nation.Text = targetStudent.nation;
+            txt_address.Text = targetStudent.address;
+            txt_living_with.Text = targetStudent.livingWith;
+            numb_born_order.Text = targetStudent.bornOrder;
+            numb_age.Text = targetStudent.age;
+            txt_phone.Text = targetStudent.phoneNumber;
+            
+            txt_father_name.Text = targetStudent.fatherName;
+            txt_father_id.Text = targetStudent.fatherId;
+            year_of_father_born.Text = targetStudent.fatherYearOfBirth; 
+            txt_father_education.Text = targetStudent.fatherLastEducation;
+            txt_father_job.Text = targetStudent.fatherJob;
+
+            txt_mother_name.Text = targetStudent.motherName;
+            txt_mother_id.Text = targetStudent.motherId;
+            year_of_mother_born.Text = targetStudent.motherYearOfBirth;
+            txt_mother_education.Text = targetStudent.motherLastEducation;
+            txt_mother_job.Text = targetStudent.motherJob;
+
             combo_class.Text = targetStudent.classGroup;
+
+            num_tall.Text = targetStudent.tall;
+            numb_weight.Text = targetStudent.weight;
+            numb_range.Text = targetStudent.range;
+            numb_brother_sister.Text = targetStudent.brotherSisterCount;
+
+            txt_id_student.Enabled = false;
         }
 
         private bool validateInput()
@@ -88,8 +122,17 @@ namespace Junior_School_Evaluation_Application
                     newStudent.weight = numb_weight.Text;
                     newStudent.range = numb_range.Text;
                     newStudent.brotherSisterCount = numb_brother_sister.Text;
-                      
-                    OleDbCommand command = new OleDbCommand(DatabaseUtility.getCreateStudentQuery(newStudent), connection);
+
+                    OleDbCommand command;
+
+                    if (updateMode)
+                    {
+                        command = new OleDbCommand(DatabaseUtility.getUpdateStudentQuery(newStudent), connection);
+                    }
+                    else
+                    {
+                        command = new OleDbCommand(DatabaseUtility.getCreateStudentQuery(newStudent), connection);
+                    }
 
                     //:: state oledbconnection harus di buka dulu dengan methode Open()
                     connection.Open(); 
@@ -99,7 +142,7 @@ namespace Junior_School_Evaluation_Application
                     this.Close();
                     this.Dispose();
 
-                    _callback?.Invoke("Siswa baru berhasil ditambahkan!");
+                    _callback?.Invoke(updateMode ? "Data siswa berhasil diperbarui!" : "Siswa baru berhasil ditambahkan!");
                 }
                 catch (Exception ex)
                 {
@@ -107,6 +150,11 @@ namespace Junior_School_Evaluation_Application
                     MessageBox.Show("Error : " + ex.Message);
                 }
             }
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_new = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -54,10 +54,9 @@
             this.btn_new.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btn_new.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_new.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_new.Location = new System.Drawing.Point(23, 71);
-            this.btn_new.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_new.Location = new System.Drawing.Point(17, 58);
             this.btn_new.Name = "btn_new";
-            this.btn_new.Size = new System.Drawing.Size(200, 74);
+            this.btn_new.Size = new System.Drawing.Size(150, 60);
             this.btn_new.TabIndex = 22;
             this.btn_new.Text = "Tambah +";
             this.btn_new.UseVisualStyleBackColor = false;
@@ -69,11 +68,9 @@
             this.groupBox1.Controls.Add(this.dgrid_list_student);
             this.groupBox1.Controls.Add(this.btn_new);
             this.groupBox1.Font = new System.Drawing.Font("Arial", 24F);
-            this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1761, 1054);
+            this.groupBox1.Size = new System.Drawing.Size(1321, 856);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Data Siswa";
@@ -83,16 +80,17 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 83.77965F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.22035F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 205F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 154F));
             this.tableLayoutPanel1.Controls.Add(this.btn_delete, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn_update, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lbl_selected, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(230, 53);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(172, 43);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1512, 100);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1134, 81);
             this.tableLayoutPanel1.TabIndex = 28;
             // 
             // btn_delete
@@ -101,10 +99,9 @@
             this.btn_delete.BackColor = System.Drawing.Color.Salmon;
             this.btn_delete.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_delete.Location = new System.Drawing.Point(1310, 13);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_delete.Location = new System.Drawing.Point(982, 10);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(197, 74);
+            this.btn_delete.Size = new System.Drawing.Size(148, 60);
             this.btn_delete.TabIndex = 25;
             this.btn_delete.Text = "Hapus";
             this.btn_delete.UseVisualStyleBackColor = false;
@@ -116,10 +113,9 @@
             this.btn_update.BackColor = System.Drawing.Color.Orange;
             this.btn_update.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_update.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_update.Location = new System.Drawing.Point(1100, 13);
-            this.btn_update.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_update.Location = new System.Drawing.Point(825, 10);
             this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(200, 74);
+            this.btn_update.Size = new System.Drawing.Size(150, 60);
             this.btn_update.TabIndex = 26;
             this.btn_update.Text = "Ubah";
             this.btn_update.UseVisualStyleBackColor = false;
@@ -131,9 +127,10 @@
             this.lbl_selected.AutoSize = true;
             this.lbl_selected.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_selected.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_selected.Location = new System.Drawing.Point(1059, 27);
+            this.lbl_selected.Location = new System.Drawing.Point(793, 22);
+            this.lbl_selected.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_selected.Name = "lbl_selected";
-            this.lbl_selected.Size = new System.Drawing.Size(33, 45);
+            this.lbl_selected.Size = new System.Drawing.Size(26, 36);
             this.lbl_selected.TabIndex = 27;
             this.lbl_selected.Text = "-";
             this.lbl_selected.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -146,53 +143,50 @@
             this.dgrid_list_student.AllowUserToResizeRows = false;
             this.dgrid_list_student.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgrid_list_student.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 24F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgrid_list_student.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 24F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgrid_list_student.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgrid_list_student.ColumnHeadersHeight = 50;
-            this.dgrid_list_student.Location = new System.Drawing.Point(23, 159);
-            this.dgrid_list_student.Margin = new System.Windows.Forms.Padding(4);
+            this.dgrid_list_student.Location = new System.Drawing.Point(17, 129);
             this.dgrid_list_student.MultiSelect = false;
             this.dgrid_list_student.Name = "dgrid_list_student";
             this.dgrid_list_student.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 24F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.NullValue = "- belum ada data -";
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgrid_list_student.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 24F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.NullValue = "- belum ada data -";
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgrid_list_student.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgrid_list_student.RowHeadersVisible = false;
             this.dgrid_list_student.RowHeadersWidth = 51;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 12F);
-            this.dgrid_list_student.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 12F);
+            this.dgrid_list_student.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgrid_list_student.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.dgrid_list_student.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(5);
             this.dgrid_list_student.RowTemplate.Height = 40;
             this.dgrid_list_student.RowTemplate.ReadOnly = true;
             this.dgrid_list_student.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgrid_list_student.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgrid_list_student.Size = new System.Drawing.Size(1719, 868);
+            this.dgrid_list_student.Size = new System.Drawing.Size(1289, 705);
             this.dgrid_list_student.TabIndex = 25;
             this.dgrid_list_student.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrid_list_student_CellEnter);
-            this.dgrid_list_student.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrid_list_student_CellLeave);
             // 
             // btn_exit
             // 
             this.btn_exit.BackColor = System.Drawing.Color.Salmon;
             this.btn_exit.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_exit.Location = new System.Drawing.Point(1577, 1076);
-            this.btn_exit.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_exit.Location = new System.Drawing.Point(1183, 874);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(200, 74);
+            this.btn_exit.Size = new System.Drawing.Size(150, 60);
             this.btn_exit.TabIndex = 24;
             this.btn_exit.Text = "Keluar";
             this.btn_exit.UseVisualStyleBackColor = false;
@@ -210,14 +204,13 @@
             // 
             // StudentsList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1793, 1164);
+            this.ClientSize = new System.Drawing.Size(1345, 946);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_exit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StudentsList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Students";

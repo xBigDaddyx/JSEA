@@ -46,12 +46,10 @@
             this.label16 = new System.Windows.Forms.Label();
             this.btn_save = new System.Windows.Forms.Button();
             this.txt_father_name = new System.Windows.Forms.TextBox();
-            this.year_of_father_born = new System.Windows.Forms.DateTimePicker();
             this.txt_father_id = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.date_picker_born_date = new System.Windows.Forms.DateTimePicker();
             this.txt_phone = new System.Windows.Forms.TextBox();
-            this.numb_born_order = new System.Windows.Forms.NumericUpDown();
             this.txt_born_place = new System.Windows.Forms.TextBox();
             this.txt_living_with = new System.Windows.Forms.TextBox();
             this.numb_age = new System.Windows.Forms.NumericUpDown();
@@ -71,7 +69,6 @@
             this.txt_mother_education = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.year_of_mother_born = new System.Windows.Forms.DateTimePicker();
             this.txt_mother_id = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txt_father_job = new System.Windows.Forms.TextBox();
@@ -93,8 +90,10 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.numb_born_order = new System.Windows.Forms.NumericUpDown();
+            this.year_of_mother_born = new System.Windows.Forms.NumericUpDown();
+            this.year_of_father_born = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numb_born_order)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numb_age)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -105,6 +104,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numb_weight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numb_range)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numb_brother_sister)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numb_born_order)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.year_of_mother_born)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.year_of_father_born)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -292,17 +294,6 @@
             this.txt_father_name.Size = new System.Drawing.Size(330, 23);
             this.txt_father_name.TabIndex = 0;
             // 
-            // year_of_father_born
-            // 
-            this.year_of_father_born.CustomFormat = "yyyy";
-            this.year_of_father_born.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.year_of_father_born.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.year_of_father_born.Location = new System.Drawing.Point(195, 116);
-            this.year_of_father_born.Name = "year_of_father_born";
-            this.year_of_father_born.ShowUpDown = true;
-            this.year_of_father_born.Size = new System.Drawing.Size(82, 26);
-            this.year_of_father_born.TabIndex = 38;
-            // 
             // txt_father_id
             // 
             this.txt_father_id.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -366,17 +357,6 @@
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.Size = new System.Drawing.Size(330, 23);
             this.txt_phone.TabIndex = 0;
-            // 
-            // numb_born_order
-            // 
-            this.numb_born_order.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numb_born_order.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numb_born_order.Hexadecimal = true;
-            this.numb_born_order.Location = new System.Drawing.Point(196, 415);
-            this.numb_born_order.Name = "numb_born_order";
-            this.numb_born_order.Size = new System.Drawing.Size(65, 22);
-            this.numb_born_order.TabIndex = 22;
-            this.numb_born_order.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt_born_place
             // 
@@ -488,6 +468,7 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Wheat;
+            this.groupBox4.Controls.Add(this.year_of_mother_born);
             this.groupBox4.Controls.Add(this.label20);
             this.groupBox4.Controls.Add(this.txt_mother_job);
             this.groupBox4.Controls.Add(this.txt_mother_name);
@@ -496,7 +477,6 @@
             this.groupBox4.Controls.Add(this.txt_mother_education);
             this.groupBox4.Controls.Add(this.label21);
             this.groupBox4.Controls.Add(this.label19);
-            this.groupBox4.Controls.Add(this.year_of_mother_born);
             this.groupBox4.Controls.Add(this.txt_mother_id);
             this.groupBox4.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(21, 296);
@@ -583,17 +563,6 @@
             this.label19.TabIndex = 51;
             this.label19.Text = "Pendidikan";
             // 
-            // year_of_mother_born
-            // 
-            this.year_of_mother_born.CustomFormat = "yyyy";
-            this.year_of_mother_born.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.year_of_mother_born.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.year_of_mother_born.Location = new System.Drawing.Point(195, 111);
-            this.year_of_mother_born.Name = "year_of_mother_born";
-            this.year_of_mother_born.ShowUpDown = true;
-            this.year_of_mother_born.Size = new System.Drawing.Size(82, 26);
-            this.year_of_mother_born.TabIndex = 49;
-            // 
             // txt_mother_id
             // 
             this.txt_mother_id.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -606,11 +575,11 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Wheat;
+            this.groupBox3.Controls.Add(this.year_of_father_born);
             this.groupBox3.Controls.Add(this.txt_father_job);
             this.groupBox3.Controls.Add(this.txt_father_name);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.year_of_father_born);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.txt_father_id);
             this.groupBox3.Controls.Add(this.label15);
@@ -838,6 +807,70 @@
             this.label25.TabIndex = 53;
             this.label25.Text = "Berat Badan";
             // 
+            // numb_born_order
+            // 
+            this.numb_born_order.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numb_born_order.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numb_born_order.Hexadecimal = true;
+            this.numb_born_order.Location = new System.Drawing.Point(196, 415);
+            this.numb_born_order.Name = "numb_born_order";
+            this.numb_born_order.Size = new System.Drawing.Size(65, 22);
+            this.numb_born_order.TabIndex = 22;
+            this.numb_born_order.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // year_of_mother_born
+            // 
+            this.year_of_mother_born.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.year_of_mother_born.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.year_of_mother_born.Hexadecimal = true;
+            this.year_of_mother_born.Location = new System.Drawing.Point(195, 114);
+            this.year_of_mother_born.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.year_of_mother_born.Minimum = new decimal(new int[] {
+            1945,
+            0,
+            0,
+            0});
+            this.year_of_mother_born.Name = "year_of_mother_born";
+            this.year_of_mother_born.Size = new System.Drawing.Size(76, 22);
+            this.year_of_mother_born.TabIndex = 55;
+            this.year_of_mother_born.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.year_of_mother_born.Value = new decimal(new int[] {
+            1945,
+            0,
+            0,
+            0});
+            this.year_of_mother_born.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // year_of_father_born
+            // 
+            this.year_of_father_born.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.year_of_father_born.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.year_of_father_born.Hexadecimal = true;
+            this.year_of_father_born.Location = new System.Drawing.Point(195, 118);
+            this.year_of_father_born.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.year_of_father_born.Minimum = new decimal(new int[] {
+            1945,
+            0,
+            0,
+            0});
+            this.year_of_father_born.Name = "year_of_father_born";
+            this.year_of_father_born.Size = new System.Drawing.Size(76, 22);
+            this.year_of_father_born.TabIndex = 56;
+            this.year_of_father_born.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.year_of_father_born.Value = new decimal(new int[] {
+            1945,
+            0,
+            0,
+            0});
+            // 
             // StudentsCRUD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -852,7 +885,6 @@
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.btn_cancel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "StudentsCRUD";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -860,7 +892,6 @@
             this.TopMost = true;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numb_born_order)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numb_age)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
@@ -875,6 +906,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numb_weight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numb_range)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numb_brother_sister)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numb_born_order)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.year_of_mother_born)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.year_of_father_born)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -898,14 +932,12 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btn_save;
         private System.Windows.Forms.TextBox txt_father_name;
-        private System.Windows.Forms.DateTimePicker year_of_father_born;
         private System.Windows.Forms.TextBox txt_father_id;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txt_father_education;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txt_phone;
-        private System.Windows.Forms.NumericUpDown numb_born_order;
         private System.Windows.Forms.TextBox txt_born_place;
         private System.Windows.Forms.TextBox txt_living_with;
         private System.Windows.Forms.NumericUpDown numb_age;
@@ -921,7 +953,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txt_mother_id;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.DateTimePicker year_of_mother_born;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox txt_mother_name;
@@ -945,5 +976,8 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.NumericUpDown numb_born_order;
+        private System.Windows.Forms.NumericUpDown year_of_mother_born;
+        private System.Windows.Forms.NumericUpDown year_of_father_born;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Junior_School_Evaluation_Application.Students.Models;
 using System;
+using System.Data.OleDb;
 using System.Windows.Forms;
 
 namespace Junior_School_Evaluation_Application.Students.Services
@@ -35,30 +36,15 @@ namespace Junior_School_Evaluation_Application.Students.Services
             services.addNewStudent(dgrid_list_student);
         }
 
-        private void dgrid_list_student_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
-        {
-        }
-
         private void dgrid_list_student_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
             selectedStudent.id = dgrid_list_student.CurrentRow.Cells[0].Value.ToString();
             selectedStudent.name = dgrid_list_student.CurrentRow.Cells[1].Value.ToString();
-            selectedStudent.classGroup = dgrid_list_student.CurrentRow.Cells[2].Value.ToString();
 
             btn_update.Visible = true;
             btn_delete.Visible = true;
 
             lbl_selected.Text = selectedStudent.name;
-        }
-
-        private void dgrid_list_student_CellLeave(object sender, DataGridViewCellEventArgs e)
-        {
-            /*selectedStudent.id = "";
-            selectedStudent.name = "";
-            selectedStudent.classGroup = "";
-
-            btn_update.Visible = false;
-            btn_delete.Visible = false;*/
         }
 
         private void btn_update_Click(object sender, EventArgs e)
@@ -68,7 +54,7 @@ namespace Junior_School_Evaluation_Application.Students.Services
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-
+            services.deleteStudent(dgrid_list_student, selectedStudent);
         }
     }
 }
