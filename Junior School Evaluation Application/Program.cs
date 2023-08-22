@@ -19,7 +19,7 @@ namespace Junior_School_Evaluation_Application
             Application.SetCompatibleTextRenderingDefault(false);
             Teachers teacherModel = new Teachers();
 
-            TeacherServices teacherService = new TeacherServices(teacherModel, DatabaseUtility.GetConnectionString());
+            TeacherServices teacherService = new TeacherServices(teacherModel, DatabaseUtility.getConnectionString());
             Login loginForm = new Login(teacherService);
 
             teacherService.Initialize(loginForm);
