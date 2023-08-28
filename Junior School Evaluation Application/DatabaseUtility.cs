@@ -16,8 +16,11 @@ namespace Junior_School_Evaluation_Application
 
 
         //:::: variable static lokasi/path database berada
-        //public static string DatabasePath = System.IO.Path.Combine(Application.StartupPath, DatabaseFileName);
-        public static string DatabasePath = "E:/DevEnv/Projects/Desktop/JSEA/Junior School Evaluation Application/"+ DatabaseFileName;
+        public static string DatabasePath = System.IO.Path.Combine(Application.StartupPath, DatabaseFileName);
+
+        // TESTING ONLY
+        //public static string DatabasePath = "E:/DevEnv/Projects/Desktop/JSEA/Junior School Evaluation Application/"+ DatabaseFileName;
+
 
         public static string getConnectionString()
         {
