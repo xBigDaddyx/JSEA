@@ -28,7 +28,8 @@ namespace Junior_School_Evaluation_Application.Students.Services
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            this.Close();
+            this.Dispose();
         }
 
         private void btn_new_Click(object sender, EventArgs e)
@@ -38,8 +39,8 @@ namespace Junior_School_Evaluation_Application.Students.Services
 
         private void dgrid_list_student_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-            selectedStudent.id = dgrid_list_student.CurrentRow.Cells[0].Value.ToString();
-            selectedStudent.name = dgrid_list_student.CurrentRow.Cells[1].Value.ToString();
+            selectedStudent.id = dgrid_list_student.CurrentRow.Cells[DatabaseUtility.studentCrudId].Value.ToString();
+            selectedStudent.name = dgrid_list_student.CurrentRow.Cells[DatabaseUtility.studentCrudName].Value.ToString();
 
             btn_update.Visible = true;
             btn_delete.Visible = true;

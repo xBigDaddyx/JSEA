@@ -16,3 +16,19 @@ C:\Users\faisal.yusuf\source\repos\xBigDaddyx\JSEA\Junior School Evaluation Appl
 C:\Users\faisal.yusuf\source\repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\master_db.accdb
 C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior_School_Evaluation_Application.Auth.Views.Login.resources
 C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior_School_Evaluation_Application.MainDashboard.resources
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\ExCSS.dll
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\Fizzler.dll
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\ReaLTaiizor.dll
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\Svg.dll
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\System.Buffers.dll
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\System.Memory.dll
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\Fizzler.pdb
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\ReaLTaiizor.xml
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\Svg.xml
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\System.Buffers.xml
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\System.Memory.xml
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior School Evaluation Application.csproj.CopyComplete

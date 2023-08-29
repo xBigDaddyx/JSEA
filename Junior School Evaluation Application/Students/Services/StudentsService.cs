@@ -25,19 +25,37 @@ namespace Junior_School_Evaluation_Application.Students.Services
 
                     DataTable dTable = new DataTable();
 
+                    //:: menambahkan kolom nomor dengan nama "rowNumb" ke data tabel 
+                    dTable.Columns.Add("rowNumb", typeof(int));
+                    dTable.Columns["rowNumb"].AutoIncrement = true;
+                    dTable.Columns["rowNumb"].AutoIncrementSeed = 1;
+
                     OleDbDataAdapter sqlAdpt = new OleDbDataAdapter(command);
 
                     //:: state oledbconnection harus di buka dulu dengan methode Open()
                     connection.Open();
-
                     sqlAdpt.Fill(dTable);
-                     
-                    dTable.Columns[1].ColumnName = "Nama";
-                    dTable.Columns[2].ColumnName = "No. HP";
-                    dTable.Columns[3].ColumnName = "Kelas";
-
                     connection.Close();
+
+                    //:: mengisikan data ke dataGrid parameter dengan data tabel dari database
                     gridView.DataSource = dTable;
+
+                    //:: mengubah beberapa atribut kolom datagridview secara masive
+                    for (int i = 0; i < gridView.Columns.Count; i++)
+                    {
+                        gridView.Columns[i].SortMode = DataGridViewColumnSortMode.NotSortable;
+                        gridView.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                    }
+
+                    //:: mengubah beberapa atribut kolom datagridview secara individual
+                    gridView.Columns["rowNumb"].HeaderText = "No";
+                    gridView.Columns[DatabaseUtility.studentCrudId].Visible = false;
+                    gridView.Columns[DatabaseUtility.studentCrudName].HeaderText = "Nama";
+                    gridView.Columns[DatabaseUtility.studentCrudName].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    gridView.Columns[DatabaseUtility.studentCrudPhoneNumber].HeaderText = "No. HP";
+                    gridView.Columns[DatabaseUtility.studentCrudPhoneNumber].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    gridView.Columns[DatabaseUtility.studentCrudClass].HeaderText = "Kelas";
+                    gridView.Columns[DatabaseUtility.studentCrudClass].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                 }
                 catch (Exception ex)
                 {

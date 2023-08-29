@@ -24,7 +24,7 @@ namespace Junior_School_Evaluation_Application
 
             teacherService.Initialize(loginForm);
 
-            Application.Run(loginForm);
+            Application.Run(new MainDashboard());
         }
     }
 }
