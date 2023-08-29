@@ -150,6 +150,7 @@
       <DependentUpon>StudentsList.cs</DependentUpon>
     </Compile>
     <Compile Include="Study\Models\Study.cs" />
+    <Compile Include="Theme.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
