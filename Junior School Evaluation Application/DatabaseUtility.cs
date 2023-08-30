@@ -32,6 +32,73 @@ namespace Junior_School_Evaluation_Application
             return "SELECT " + AuthPassword + " FROM " + AuthTable + " where " + AuthUsername + " = @Username";
         }
 
+        // semua database yang dibutuhkan oleh CLASSES ------------------------------------------------
+
+        public static string classesTable = "students";
+
+        public static string classesCrudId = "id";
+        public static string classesCrudName = "name";
+        public static string classesCrudCapacity = "gender";
+
+        public static string getViewClassesQuery()
+        {
+            string _command = "SELECT ";
+
+            _command += classesCrudId + ", ";
+            _command += classesCrudName + ", ";
+            _command += classesCrudCapacity;
+
+            _command += " FROM " + classesTable;
+
+            return _command;
+        }
+
+        public static string getViewClassesSpesificQuery(string id)
+        {
+            string _command = "SELECT * FROM " + classesTable + " WHERE " + classesCrudId + " = '" + id + "'";
+            return _command;
+        }
+
+        public static string getCreateClassesQuery(Classes.Models.ClassesDTO newClasses)
+        {
+            string _command = "INSERT INTO " + classesTable + " (";
+
+            _command += classesCrudId + ", ";
+            _command += classesCrudName + ", ";
+            _command += classesCrudCapacity;
+
+            _command += ") VALUES (";
+
+            _command += "'" + newClasses.id + "', ";
+            _command += "'" + newClasses.name + "', ";
+            _command += "'" + newClasses.capacity + "'";
+
+            _command += ")";
+
+            return _command;
+        }
+
+        public static string getUpdateClassesQuery(Classes.Models.ClassesDTO targetClasses)
+        {
+            string _command = "UPDATE " + classesTable + " SET ";
+
+            /*_command += classesCrudId + " = '" + targetClasses.id + "', ";*/
+            _command += classesCrudName + " = '" + targetClasses.name + "', ";
+            _command += classesCrudCapacity + " = '" + targetClasses.capacity + "'";
+
+            _command += " WHERE " + classesCrudId + " = '" + targetClasses.id + "'";
+
+            return _command;
+        }
+
+        public static string getDeleteClassesQuery(string id)
+        {
+            string _command = "DELETE FROM " + classesTable;
+            _command += " WHERE " + classesCrudId + " = '" + id + "'";
+            return _command;
+        }
+
+        // ---------------------------------------------------------------------------------------------
 
 
         // semua database yang dibutuhkan oleh STUDENTS ------------------------------------------------

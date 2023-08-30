@@ -103,6 +103,26 @@
   <ItemGroup>
     <Compile Include="Auth\Models\Teachers.cs" />
     <Compile Include="Auth\Services\TeacherServices.cs" />
+    <Compile Include="Classes\Models\ClassesDTO.cs" />
+    <Compile Include="Classes\Services\ClassesService.cs" />
+    <Compile Include="Classes\Services\CustomConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\Services\CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\Views\ClassesCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\Views\ClassesCRUD.Designer.cs">
+      <DependentUpon>ClassesCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Views\ClassesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\Views\ClassesList.Designer.cs">
+      <DependentUpon>ClassesList.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseUtility.cs" />
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -151,6 +171,18 @@
     </Compile>
     <Compile Include="Study\Models\Study.cs" />
     <Compile Include="Theme.cs" />
+    <EmbeddedResource Include="Classes\Services\CustomConfirmation.resx">
+      <DependentUpon>CustomConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\Services\CustomMessageBox.resx">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\Views\ClassesCRUD.resx">
+      <DependentUpon>ClassesCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\Views\ClassesList.resx">
+      <DependentUpon>ClassesList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

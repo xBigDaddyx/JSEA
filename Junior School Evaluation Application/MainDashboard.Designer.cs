@@ -34,10 +34,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.bodyPanel = new System.Windows.Forms.Panel();
             this.navigationPanel = new System.Windows.Forms.Panel();
             this.navButton2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.bodyPanel = new System.Windows.Forms.Panel();
+            this.navButton1 = new System.Windows.Forms.Button();
+            this.navButton3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -104,12 +105,22 @@
             this.panel4.Size = new System.Drawing.Size(1024, 452);
             this.panel4.TabIndex = 6;
             // 
+            // bodyPanel
+            // 
+            this.bodyPanel.AutoSize = true;
+            this.bodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bodyPanel.Location = new System.Drawing.Point(200, 0);
+            this.bodyPanel.Name = "bodyPanel";
+            this.bodyPanel.Size = new System.Drawing.Size(824, 452);
+            this.bodyPanel.TabIndex = 1;
+            // 
             // navigationPanel
             // 
             this.navigationPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.navigationPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(56)))), ((int)(((byte)(158)))));
+            this.navigationPanel.Controls.Add(this.navButton3);
             this.navigationPanel.Controls.Add(this.navButton2);
-            this.navigationPanel.Controls.Add(this.button1);
+            this.navigationPanel.Controls.Add(this.navButton1);
             this.navigationPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.navigationPanel.Location = new System.Drawing.Point(0, 0);
             this.navigationPanel.Name = "navigationPanel";
@@ -139,35 +150,48 @@
             this.navButton2.UseVisualStyleBackColor = false;
             this.navButton2.Click += new System.EventHandler(this.navButton2_Click);
             // 
-            // button1
+            // navButton1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(86)))), ((int)(((byte)(217)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Junior_School_Evaluation_Application.Properties.Resources.apps_white__1___1_;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(10, 10);
-            this.button1.Margin = new System.Windows.Forms.Padding(10);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(180, 40);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "     Dashboard";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
+            this.navButton1.BackColor = System.Drawing.Color.Transparent;
+            this.navButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.navButton1.FlatAppearance.BorderSize = 0;
+            this.navButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(86)))), ((int)(((byte)(217)))));
+            this.navButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.navButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navButton1.ForeColor = System.Drawing.Color.White;
+            this.navButton1.Image = global::Junior_School_Evaluation_Application.Properties.Resources.apps_white__1___1_;
+            this.navButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.navButton1.Location = new System.Drawing.Point(10, 10);
+            this.navButton1.Margin = new System.Windows.Forms.Padding(10);
+            this.navButton1.Name = "navButton1";
+            this.navButton1.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.navButton1.Size = new System.Drawing.Size(180, 40);
+            this.navButton1.TabIndex = 6;
+            this.navButton1.Text = "     Dashboard";
+            this.navButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.navButton1.UseVisualStyleBackColor = false;
             // 
-            // bodyPanel
+            // navButton3
             // 
-            this.bodyPanel.AutoSize = true;
-            this.bodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bodyPanel.Location = new System.Drawing.Point(200, 0);
-            this.bodyPanel.Name = "bodyPanel";
-            this.bodyPanel.Size = new System.Drawing.Size(824, 452);
-            this.bodyPanel.TabIndex = 1;
+            this.navButton3.BackColor = System.Drawing.Color.Transparent;
+            this.navButton3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.navButton3.FlatAppearance.BorderSize = 0;
+            this.navButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(86)))), ((int)(((byte)(217)))));
+            this.navButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.navButton3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navButton3.ForeColor = System.Drawing.Color.White;
+            this.navButton3.Image = global::Junior_School_Evaluation_Application.Properties.Resources.users_white__1___1_;
+            this.navButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.navButton3.Location = new System.Drawing.Point(10, 90);
+            this.navButton3.Margin = new System.Windows.Forms.Padding(10);
+            this.navButton3.Name = "navButton3";
+            this.navButton3.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.navButton3.Size = new System.Drawing.Size(180, 40);
+            this.navButton3.TabIndex = 8;
+            this.navButton3.Text = "     Classes";
+            this.navButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.navButton3.UseVisualStyleBackColor = false;
+            this.navButton3.Click += new System.EventHandler(this.navButton3_Click);
             // 
             // MainDashboard
             // 
@@ -198,6 +222,7 @@
         private System.Windows.Forms.Panel bodyPanel;
         private System.Windows.Forms.Panel navigationPanel;
         private System.Windows.Forms.Button navButton2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button navButton1;
+        private System.Windows.Forms.Button navButton3;
     }
 }

@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Runtime.InteropServices;
+using Junior_School_Evaluation_Application.Classes.Services;
 
 namespace Junior_School_Evaluation_Application
 {
@@ -90,7 +91,7 @@ namespace Junior_School_Evaluation_Application
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
-
+        
         private void navButton2_Click(object sender, EventArgs e)
         {
             if (this.bodyPanel.Controls.Count > 0)
@@ -101,8 +102,28 @@ namespace Junior_School_Evaluation_Application
                 }
 
             }
-            this.navButton2.BackColor = Color.FromArgb(105, 65, 198);
+            this.navButton1.BackColor = Theme.NavButtonIdle;
+            this.navButton2.BackColor = Theme.NavButtonActive;
+            this.navButton3.BackColor = Theme.NavButtonIdle;
             StudentsList frm = new StudentsList() { TopLevel = false, TopMost = true, WindowState = FormWindowState.Maximized, Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right };
+            this.bodyPanel.Controls.Add(frm);
+
+            frm.Show();
+        }
+        private void navButton3_Click(object sender, EventArgs e)
+        {
+            if (this.bodyPanel.Controls.Count > 0)
+            {
+                foreach (Control control in this.bodyPanel.Controls)
+                {
+                    this.bodyPanel.Controls.Remove(control);
+                }
+
+            }
+            this.navButton1.BackColor = Theme.NavButtonIdle;
+            this.navButton2.BackColor = Theme.NavButtonIdle;
+            this.navButton3.BackColor = Theme.NavButtonActive;
+            ClassesList frm = new ClassesList() { TopLevel = false, TopMost = true, WindowState = FormWindowState.Maximized, Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right };
             this.bodyPanel.Controls.Add(frm);
 
             frm.Show();
