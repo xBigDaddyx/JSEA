@@ -77,13 +77,13 @@
     <Compile Include="Auth\Models\Teachers.cs" />
     <Compile Include="Auth\Services\TeacherServices.cs" />
     <Compile Include="Classes\Models\ClassesDTO.cs" />
+    <Compile Include="Classes\Services\ClassesService.cs" />
     <Compile Include="Classes\Services\CustomConfirmation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Classes\Services\CustomMessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Classes\Services\ClassesService.cs" />
     <Compile Include="Classes\Views\ClassesCRUD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,11 +97,6 @@
       <DependentUpon>ClassesList.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseUtility.cs" />
-    <Compile Include="DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Auth\Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,17 +172,6 @@
     <EmbeddedResource Include="Students\Views\StudentsList.resx">
       <DependentUpon>StudentsList.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DataSet1.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

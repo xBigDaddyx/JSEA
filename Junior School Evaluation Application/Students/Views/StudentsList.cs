@@ -48,6 +48,17 @@ namespace Junior_School_Evaluation_Application.Students.Services
             lbl_selected.Text = selectedStudent.name;
         }
 
+        private void dgrid_list_student_CellLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedStudent.id = "";
+            selectedStudent.name = "";
+
+            btn_update.Visible = false;
+            btn_delete.Visible = false;
+
+            lbl_selected.Text = "";
+        }
+
         private void btn_update_Click(object sender, EventArgs e)
         {
             services.editStudent(dgrid_list_student, selectedStudent);

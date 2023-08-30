@@ -23,6 +23,8 @@ namespace Junior_School_Evaluation_Application
 
         private void sToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (classesList != null && !classesList.IsDisposed) return;
+
             if (studentsList == null || studentsList.IsDisposed)
             {
                 studentsList = new StudentsList();
@@ -33,6 +35,8 @@ namespace Junior_School_Evaluation_Application
 
         private void classesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (studentsList != null && !studentsList.IsDisposed) return;
+
             if (classesList == null || classesList.IsDisposed)
             {
                 classesList = new ClassesList();
