@@ -123,10 +123,35 @@ namespace Junior_School_Evaluation_Application
             this.navButton1.BackColor = Theme.NavButtonIdle;
             this.navButton2.BackColor = Theme.NavButtonIdle;
             this.navButton3.BackColor = Theme.NavButtonActive;
-            ClassesList frm = new ClassesList() { TopLevel = false, TopMost = true, WindowState = FormWindowState.Maximized, Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right };
+            ClassesList frm = new ClassesList() { TopLevel = false, TopMost = true, Dock = DockStyle.Fill,WindowState = FormWindowState.Maximized, Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right };
             this.bodyPanel.Controls.Add(frm);
 
             frm.Show();
+        }
+
+        private void MainDashboard_MaximumSizeChanged(object sender, EventArgs e)
+        {
+            
+            this.bodyPanel.Refresh();
+        }
+
+        private void MainDashboard_MaximizedBoundsChanged(object sender, EventArgs e)
+        {
+            
+            this.bodyPanel.Refresh();
+        }
+
+        private void MainDashboard_Resize(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainDashboard_SizeChanged(object sender, EventArgs e)
+        {
+
+            this.bodyPanel.MinimumSize = this.MinimumSize;
+            this.bodyPanel.MaximumSize = this.MaximumSize;
+            this.bodyPanel.Refresh();
         }
     }
 }
