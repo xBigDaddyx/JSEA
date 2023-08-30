@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Junior_School_Evaluation_Application.Auth.Models;
+using Junior_School_Evaluation_Application.Auth.Services;
+using Junior_School_Evaluation_Application.Auth.Views;
+using System;
 using System.Windows.Forms;
 
 namespace Junior_School_Evaluation_Application
@@ -14,10 +14,17 @@ namespace Junior_School_Evaluation_Application
         [STAThread]
         static void Main()
         {
-            
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Teachers teacherModel = new Teachers();
+
+            TeacherServices teacherService = new TeacherServices(teacherModel, DatabaseUtility.getConnectionString());
+            Login loginForm = new Login(teacherService);
+
+            teacherService.Initialize(loginForm);
+
+            Application.Run(new MainDashboard());
         }
     }
 }
