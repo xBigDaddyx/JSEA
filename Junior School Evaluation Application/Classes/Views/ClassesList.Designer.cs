@@ -57,7 +57,7 @@
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(734, 311);
+            this.groupBox1.Size = new System.Drawing.Size(750, 350);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Data Kelas";
@@ -70,13 +70,13 @@
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 23);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 33);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(728, 285);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(744, 314);
             this.tableLayoutPanel2.TabIndex = 29;
             // 
             // dgrid_list
@@ -149,7 +149,7 @@
             this.dgrid_list.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgrid_list.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgrid_list.ShowEditingIcon = false;
-            this.dgrid_list.Size = new System.Drawing.Size(722, 239);
+            this.dgrid_list.Size = new System.Drawing.Size(738, 268);
             this.dgrid_list.TabIndex = 25;
             this.dgrid_list.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrid_list_student_CellEnter);
             this.dgrid_list.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrid_list_CellLeave);
@@ -171,7 +171,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(724, 36);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(740, 36);
             this.tableLayoutPanel1.TabIndex = 28;
             // 
             // btn_new
@@ -180,7 +180,7 @@
             this.btn_new.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_new.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btn_new.ForeColor = System.Drawing.Color.White;
-            this.btn_new.Location = new System.Drawing.Point(637, 3);
+            this.btn_new.Location = new System.Drawing.Point(653, 3);
             this.btn_new.Name = "btn_new";
             this.btn_new.Size = new System.Drawing.Size(84, 34);
             this.btn_new.TabIndex = 22;
@@ -198,7 +198,7 @@
             this.lbl_selected.Location = new System.Drawing.Point(2, 0);
             this.lbl_selected.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_selected.Name = "lbl_selected";
-            this.lbl_selected.Size = new System.Drawing.Size(450, 40);
+            this.lbl_selected.Size = new System.Drawing.Size(466, 40);
             this.lbl_selected.TabIndex = 27;
             this.lbl_selected.Text = "-";
             this.lbl_selected.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -209,7 +209,7 @@
             this.btn_update.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btn_update.ForeColor = System.Drawing.Color.White;
-            this.btn_update.Location = new System.Drawing.Point(457, 3);
+            this.btn_update.Location = new System.Drawing.Point(473, 3);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(84, 34);
             this.btn_update.TabIndex = 26;
@@ -223,7 +223,7 @@
             this.btn_delete.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete.ForeColor = System.Drawing.Color.White;
-            this.btn_delete.Location = new System.Drawing.Point(547, 3);
+            this.btn_delete.Location = new System.Drawing.Point(563, 3);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(84, 34);
             this.btn_delete.TabIndex = 25;
@@ -235,15 +235,15 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.ClientSize = new System.Drawing.Size(734, 311);
+            this.ClientSize = new System.Drawing.Size(750, 350);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.MaximizeBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(750, 350);
             this.Name = "ClassesList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Students";
+            this.Text = "Classes";
             this.Load += new System.EventHandler(this.ClassesListInterfaces_Load);
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
