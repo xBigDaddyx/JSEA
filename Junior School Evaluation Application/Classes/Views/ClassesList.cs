@@ -51,6 +51,17 @@ namespace Junior_School_Evaluation_Application.Classes.Services
             lbl_selected.Text = selectedClasses.name;
         }
 
+        private void dgrid_list_CellLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedClasses.id = "";
+            selectedClasses.name = "";
+
+            btn_update.Visible = false;
+            btn_delete.Visible = false;
+
+            lbl_selected.Text = "";
+        }
+
         private void btn_update_Click(object sender, EventArgs e)
         {
             services.editClasses(dgrid_list, selectedClasses);
@@ -59,6 +70,11 @@ namespace Junior_School_Evaluation_Application.Classes.Services
         private void btn_delete_Click(object sender, EventArgs e)
         {
             services.deleteClasses(dgrid_list, selectedClasses);
+        }
+
+        private void dgrid_list_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

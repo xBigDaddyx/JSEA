@@ -77,11 +77,11 @@
             // btn_cancel
             // 
             this.btn_cancel.BackColor = System.Drawing.Color.Salmon;
-            this.btn_cancel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btn_cancel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_cancel.Location = new System.Drawing.Point(57, 198);
+            this.btn_cancel.Location = new System.Drawing.Point(236, 163);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(150, 60);
+            this.btn_cancel.Size = new System.Drawing.Size(90, 40);
             this.btn_cancel.TabIndex = 20;
             this.btn_cancel.Text = "Batal";
             this.btn_cancel.UseVisualStyleBackColor = false;
@@ -90,11 +90,11 @@
             // btn_save
             // 
             this.btn_save.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_save.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btn_save.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_save.Location = new System.Drawing.Point(220, 198);
+            this.btn_save.Location = new System.Drawing.Point(332, 163);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(150, 60);
+            this.btn_save.Size = new System.Drawing.Size(90, 40);
             this.btn_save.TabIndex = 21;
             this.btn_save.Text = "Simpan";
             this.btn_save.UseVisualStyleBackColor = false;
@@ -148,13 +148,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(436, 286);
+            this.ClientSize = new System.Drawing.Size(434, 216);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.btn_cancel);
+            this.ForeColor = System.Drawing.Color.White;
+            this.MinimumSize = new System.Drawing.Size(450, 255);
             this.Name = "ClassesCRUD";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
 using System.Data.OleDb;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Junior_School_Evaluation_Application
@@ -31,6 +27,10 @@ namespace Junior_School_Evaluation_Application
         {
             return "SELECT " + AuthPassword + " FROM " + AuthTable + " where " + AuthUsername + " = @Username";
         }
+
+
+
+
 
         // semua database yang dibutuhkan oleh CLASSES ------------------------------------------------
 
@@ -99,6 +99,11 @@ namespace Junior_School_Evaluation_Application
         }
 
         // ---------------------------------------------------------------------------------------------
+
+
+
+
+
 
 
         // semua database yang dibutuhkan oleh STUDENTS ------------------------------------------------
