@@ -8,7 +8,6 @@ C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Appl
 C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior School Evaluation Application.csproj.CoreCompileInputs.cache
 C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior School Evaluation Application.exe
 C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior School Evaluation Application.pdb
-C:\Users\faisal.yusuf\source\repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior_School_Evaluation_Application.Form1.resources
 C:\Users\faisal.yusuf\source\repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior_School_Evaluation_Application.Students.Services.CustomConfirmation.resources
 C:\Users\faisal.yusuf\source\repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior_School_Evaluation_Application.Students.Services.CustomMessageBox.resources
 C:\Users\faisal.yusuf\source\repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior_School_Evaluation_Application.StudentsCRUD.resources
@@ -32,3 +31,7 @@ C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Appl
 C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\faisal.yusuf\Source\Repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior School Evaluation Application.csproj.CopyComplete
+C:\Users\faisal.yusuf\source\repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior_School_Evaluation_Application.Classes.Services.CustomConfirmation.resources
+C:\Users\faisal.yusuf\source\repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior_School_Evaluation_Application.Classes.Services.CustomMessageBox.resources
+C:\Users\faisal.yusuf\source\repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior_School_Evaluation_Application.ClassesCRUD.resources
+C:\Users\faisal.yusuf\source\repos\xBigDaddyx\JSEA\Junior School Evaluation Application\obj\Debug\Junior_School_Evaluation_Application.Classes.Services.ClassesList.resources

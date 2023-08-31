@@ -10,15 +10,23 @@ namespace Junior_School_Evaluation_Application
         //:::: variable static dan readonly untuk nama database 
         private static readonly string DatabaseFileName = "master_db.accdb";
         private const string DatabasePassword = "W@mb1s"; 
-        public static string AuthUsername = "ID"; //:: kolom username
+        public static string AuthUsername = "id"; //:: kolom username
         public static string AuthPassword = "password"; //:: kolom password
-        public static string AuthTable = "Teachers"; //:: nama table untuk autentikasi
+        public static string AuthTable = "teachers"; //:: nama table untuk autentikasi
 
 
         //:::: variable static lokasi/path database berada
         public static string DatabasePath = System.IO.Path.Combine(Application.StartupPath, DatabaseFileName);
         //public static string DatabasePath = "E:/DevEnv/Projects/Desktop/JSEA/Junior School Evaluation Application/"+ DatabaseFileName;
 
+        public static string getRegisteredQuery()
+        {
+            return "SELECT COUNT(*) FROM " + AuthTable;
+        }
+        public static string getRegisterQuery()
+        {
+            return "INSERT INTO " + AuthTable + " VALUES(@id,@nama,@password,@telepon,@alamat)";
+        }
         public static string getConnectionString()
         {
             return "Provider=Microsoft.ACE.OLEDB.12.0;Data Source="+DatabasePath+ ";Jet OLEDB:Database Password=W@mb1s;";
@@ -34,11 +42,11 @@ namespace Junior_School_Evaluation_Application
 
         // semua database yang dibutuhkan oleh CLASSES ------------------------------------------------
 
-        public static string classesTable = "students";
+        public static string classesTable = "classes";
 
         public static string classesCrudId = "id";
         public static string classesCrudName = "name";
-        public static string classesCrudCapacity = "gender";
+        public static string classesCrudCapacity = "capacity";
 
         public static string getViewClassesQuery()
         {

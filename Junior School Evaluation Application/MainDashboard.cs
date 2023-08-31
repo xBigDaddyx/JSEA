@@ -29,6 +29,7 @@ namespace Junior_School_Evaluation_Application
         bool sidebarExpand;
         public MainDashboard()
         {
+            
             InitializeComponent();
         }
 
@@ -50,24 +51,7 @@ namespace Junior_School_Evaluation_Application
 
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
-            if (sidebarExpand)
-            {
-                panel4.Width -= 10;
-                if(panel4.Width == panel4.MinimumSize.Width)
-                {
-                    sidebarExpand = false;
-                    sidebarTimer.Stop();
-                }
-            }
-            else
-            {
-                panel4.Width += 10;
-                if(panel4.Width == panel4.MaximumSize.Width)
-                {
-                    sidebarExpand = true;
-                    sidebarTimer.Stop();
-                }
-            }
+            
         }
 
         private void menuButton_Click(object sender, EventArgs e)
@@ -105,11 +89,12 @@ namespace Junior_School_Evaluation_Application
             this.navButton1.BackColor = Theme.NavButtonIdle;
             this.navButton2.BackColor = Theme.NavButtonActive;
             this.navButton3.BackColor = Theme.NavButtonIdle;
-            StudentsList frm = new StudentsList() { TopLevel = false, TopMost = true, WindowState = FormWindowState.Maximized, Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right };
-            this.bodyPanel.Controls.Add(frm);
-
-            frm.Show();
+            StudentsList form = new StudentsList() { TopLevel = false, TopMost = true, Dock = DockStyle.Fill};
+            form.Show();
+            this.bodyPanel.Controls.Add(form);
+            
         }
+       
         private void navButton3_Click(object sender, EventArgs e)
         {
             if (this.bodyPanel.Controls.Count > 0)
@@ -123,35 +108,41 @@ namespace Junior_School_Evaluation_Application
             this.navButton1.BackColor = Theme.NavButtonIdle;
             this.navButton2.BackColor = Theme.NavButtonIdle;
             this.navButton3.BackColor = Theme.NavButtonActive;
-            ClassesList frm = new ClassesList() { TopLevel = false, TopMost = true, Dock = DockStyle.Fill,WindowState = FormWindowState.Maximized, Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right };
-            this.bodyPanel.Controls.Add(frm);
+            ClassesList form = new ClassesList() { TopLevel = false, TopMost = true, Dock = DockStyle.Fill};
+            form.Show();
+            this.bodyPanel.Controls.Add(form);
+            
 
-            frm.Show();
+
+
         }
 
         private void MainDashboard_MaximumSizeChanged(object sender, EventArgs e)
         {
+
             
-            this.bodyPanel.Refresh();
         }
 
         private void MainDashboard_MaximizedBoundsChanged(object sender, EventArgs e)
         {
+
             
-            this.bodyPanel.Refresh();
         }
 
         private void MainDashboard_Resize(object sender, EventArgs e)
         {
-
+           
         }
 
         private void MainDashboard_SizeChanged(object sender, EventArgs e)
         {
+            this.Refresh();
 
-            this.bodyPanel.MinimumSize = this.MinimumSize;
-            this.bodyPanel.MaximumSize = this.MaximumSize;
-            this.bodyPanel.Refresh();
+        }
+
+        private void bodyPanel_SizeChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -117,35 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="apps_white__1___1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\apps-white (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="menu_2_white__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu-2-white (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="apps_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\apps-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2769504" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2769504.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="apps_white__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\apps-white (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="users_white__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\users-white (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="classes-icon-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classes-icon-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="users_white__1___1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\users-white (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="studies-icon-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\studies-icon-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="register-illu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\register-illu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

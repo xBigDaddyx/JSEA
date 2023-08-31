@@ -86,12 +86,12 @@ namespace Junior_School_Evaluation_Application.Students.Services
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Font = new System.Drawing.Font("Arial", 15F);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 33);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 23);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(744, 314);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(744, 324);
             this.tableLayoutPanel2.TabIndex = 29;
             // 
             // dgrid_list_student
@@ -113,7 +113,7 @@ namespace Junior_School_Evaluation_Application.Students.Services
             this.dgrid_list_student.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 15F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.MidnightBlue;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
@@ -163,7 +163,7 @@ namespace Junior_School_Evaluation_Application.Students.Services
             this.dgrid_list_student.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgrid_list_student.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgrid_list_student.ShowEditingIcon = false;
-            this.dgrid_list_student.Size = new System.Drawing.Size(738, 268);
+            this.dgrid_list_student.Size = new System.Drawing.Size(738, 278);
             this.dgrid_list_student.TabIndex = 25;
             this.dgrid_list_student.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrid_list_student_CellEnter);
             this.dgrid_list_student.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrid_list_student_CellLeave);
@@ -236,7 +236,7 @@ namespace Junior_School_Evaluation_Application.Students.Services
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.ClientSize = new System.Drawing.Size(734, 311);
+            this.ClientSize = new System.Drawing.Size(750, 350);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

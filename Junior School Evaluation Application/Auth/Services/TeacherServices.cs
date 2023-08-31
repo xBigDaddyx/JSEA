@@ -10,6 +10,7 @@ namespace Junior_School_Evaluation_Application.Auth.Services
     {
         private Teachers model;
         private Login view;
+       
         private OleDbConnection connection;
 
         public TeacherServices(Teachers model, string connectionString)
@@ -20,7 +21,9 @@ namespace Junior_School_Evaluation_Application.Auth.Services
         public void Initialize(Login view)
         {
             this.view = view;
+   
         }
+       
         public void Login(string enteredUsername, string enteredPassword)
         {
             //:: memanggil metode VerifyLogin untuk verifikasi login
@@ -37,7 +40,7 @@ namespace Junior_School_Evaluation_Application.Auth.Services
                 MessageBox.Show("Login gagal, silahkan coba lagi.");
             }
         }
-
+        
         private bool VerifyLogin(string enteredUsername, string enteredPassword)
         {
 

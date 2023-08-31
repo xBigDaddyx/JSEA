@@ -19,12 +19,31 @@ namespace Junior_School_Evaluation_Application
             Application.SetCompatibleTextRenderingDefault(false);
             Teachers teacherModel = new Teachers();
 
-            TeacherServices teacherService = new TeacherServices(teacherModel, DatabaseUtility.getConnectionString());
-            Login loginForm = new Login(teacherService);
+            //TeacherServices teacherService = new TeacherServices(teacherModel, DatabaseUtility.getConnectionString());
+            //Login loginForm = new Login(teacherService);
 
-            teacherService.Initialize(loginForm);
+            //teacherService.Initialize(loginForm);
+            TeacherRegisterService registerService = new TeacherRegisterService(teacherModel, DatabaseUtility.getConnectionString());
+            bool registered = registerService.CheckRegistered();
+            if (registered)
+            {
+            
+                TeacherServices teacherService = new TeacherServices(teacherModel, DatabaseUtility.getConnectionString());
+                Login loginForm = new Login(teacherService);
 
-            Application.Run(new MainDashboard());
+                teacherService.Initialize(loginForm);
+                Application.Run(loginForm);
+            }
+            else
+            {
+                Register registerForm = new Register(registerService);
+                registerService.Initialize(registerForm);
+
+                Application.Run(registerForm);
+            }
+
+
+           
         }
     }
 }
