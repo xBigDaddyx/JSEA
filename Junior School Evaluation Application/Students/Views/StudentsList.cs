@@ -24,6 +24,26 @@ namespace Junior_School_Evaluation_Application.Students.Services
         private void StudentsListInterfaces_Load(object sender, EventArgs e)
         {
             services.bindData(dgrid_list_student);
+            this.dgrid_list_student.ColumnHeadersDefaultCellStyle.BackColor = Colors.ColumnHeadersBg;
+            this.dgrid_list_student.ColumnHeadersDefaultCellStyle.SelectionBackColor = Colors.ColumnHeadersSelectionBackColor;
+            this.dgrid_list_student.RowsDefaultCellStyle.BackColor = Colors.RowsDefaultBg;
+            this.dgrid_list_student.RowsDefaultCellStyle.ForeColor = Colors.RowsDefaultFore;
+            this.dgrid_list_student.RowsDefaultCellStyle.SelectionBackColor = Colors.RowsDefaultSelectionBackColor;
+            this.dgrid_list_student.RowsDefaultCellStyle.SelectionForeColor = Colors.RowsDefaultSelectionForeColor;
+                
+            this.dgrid_list_student.AlternatingRowsDefaultCellStyle.BackColor = Colors.AlternatingDefaultBg;
+            this.dgrid_list_student.AlternatingRowsDefaultCellStyle.ForeColor = Colors.AlternatingDefaultFore;
+            this.dgrid_list_student.AlternatingRowsDefaultCellStyle.SelectionBackColor = Colors.AlternatingDefaultSelectionBackColor;
+            this.dgrid_list_student.AlternatingRowsDefaultCellStyle.SelectionForeColor = Colors.AlternatingDefaultSelectionForeColor;
+                 
+            this.dgrid_list_student.GridColor = Colors.GridColor;
+            this.dgrid_list_student.BackgroundColor = Colors.mainBg;
+            this.groupBox1.BackColor = Colors.mainBg;
+            this.groupBox1.ForeColor = Colors.mainFore;
+
+            ThemeUtility.ApplyButtonTheme(btn_update, "warning");
+            ThemeUtility.ApplyButtonTheme(btn_delete, "danger");
+            ThemeUtility.ApplyButtonTheme(btn_new, "success");
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
