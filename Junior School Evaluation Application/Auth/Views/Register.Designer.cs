@@ -166,8 +166,9 @@
             this.txt_password.Location = new System.Drawing.Point(3, 3);
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(245, 25);
-            this.txt_password.TabIndex = 4;
+            this.txt_password.TabIndex = 2;
             this.txt_password.UseSystemPasswordChar = true;
+            this.txt_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_password_KeyDown);
             // 
             // label6
             // 
@@ -217,8 +218,9 @@
             this.txt_telepon.Location = new System.Drawing.Point(3, 3);
             this.txt_telepon.Name = "txt_telepon";
             this.txt_telepon.Size = new System.Drawing.Size(245, 25);
-            this.txt_telepon.TabIndex = 4;
+            this.txt_telepon.TabIndex = 3;
             this.txt_telepon.Enter += new System.EventHandler(this.txt_telepon_Enter);
+            this.txt_telepon.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_telepon_KeyDown);
             this.txt_telepon.Leave += new System.EventHandler(this.txt_telepon_Leave);
             // 
             // label4
@@ -271,7 +273,7 @@
             this.txt_alamat.Location = new System.Drawing.Point(3, 3);
             this.txt_alamat.Name = "txt_alamat";
             this.txt_alamat.Size = new System.Drawing.Size(509, 171);
-            this.txt_alamat.TabIndex = 12;
+            this.txt_alamat.TabIndex = 4;
             this.txt_alamat.Text = "";
             this.txt_alamat.Enter += new System.EventHandler(this.txt_alamat_Enter);
             this.txt_alamat.Leave += new System.EventHandler(this.txt_alamat_Leave);
@@ -324,7 +326,7 @@
             this.txt_name.Location = new System.Drawing.Point(3, 3);
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(245, 25);
-            this.txt_name.TabIndex = 4;
+            this.txt_name.TabIndex = 1;
             this.txt_name.Enter += new System.EventHandler(this.txt_name_Enter);
             this.txt_name.Leave += new System.EventHandler(this.txt_name_Leave);
             // 
@@ -376,7 +378,7 @@
             this.txt_id.Location = new System.Drawing.Point(3, 3);
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(245, 25);
-            this.txt_id.TabIndex = 4;
+            this.txt_id.TabIndex = 0;
             this.txt_id.Enter += new System.EventHandler(this.txt_id_Enter);
             this.txt_id.Leave += new System.EventHandler(this.txt_id_Leave);
             // 
@@ -415,7 +417,7 @@
             this.btn_register.Name = "btn_register";
             this.btn_register.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btn_register.Size = new System.Drawing.Size(108, 34);
-            this.btn_register.TabIndex = 23;
+            this.btn_register.TabIndex = 5;
             this.btn_register.Text = "      Register";
             this.btn_register.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_register.UseVisualStyleBackColor = false;

@@ -9,7 +9,6 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Runtime.InteropServices;
 using Junior_School_Evaluation_Application.Classes.Services;
@@ -26,7 +25,7 @@ namespace Junior_School_Evaluation_Application
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
-        bool sidebarExpand;
+        
         public MainDashboard()
         {
             
@@ -86,9 +85,9 @@ namespace Junior_School_Evaluation_Application
                 }
 
             }
-            this.navButton1.BackColor = Theme.NavButtonIdle;
-            this.navButton2.BackColor = Theme.NavButtonActive;
-            this.navButton3.BackColor = Theme.NavButtonIdle;
+            this.navButton1.BackColor = Colors.NavigationBg;
+            this.navButton2.BackColor = Colors.NavigationActive;
+            this.navButton3.BackColor = Colors.NavigationBg;
             StudentsList form = new StudentsList() { TopLevel = false, TopMost = true, Dock = DockStyle.Fill};
             form.Show();
             this.bodyPanel.Controls.Add(form);
@@ -105,9 +104,9 @@ namespace Junior_School_Evaluation_Application
                 }
 
             }
-            this.navButton1.BackColor = Theme.NavButtonIdle;
-            this.navButton2.BackColor = Theme.NavButtonIdle;
-            this.navButton3.BackColor = Theme.NavButtonActive;
+            this.navButton1.BackColor = Colors.NavigationBg;
+            this.navButton2.BackColor = Colors.NavigationBg;
+            this.navButton3.BackColor = Colors.NavigationActive;
             ClassesList form = new ClassesList() { TopLevel = false, TopMost = true, Dock = DockStyle.Fill};
             form.Show();
             this.bodyPanel.Controls.Add(form);

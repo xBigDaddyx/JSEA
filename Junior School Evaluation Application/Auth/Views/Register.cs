@@ -17,7 +17,7 @@ namespace Junior_School_Evaluation_Application.Auth.Views
 {
     public partial class Register : Form
     {
-        private int borderRadius = 15;
+        private int borderRadius = 20;
         private int borderSize = 1;
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -126,24 +126,11 @@ namespace Junior_School_Evaluation_Application.Auth.Views
         }
         private void Register_Load(object sender, EventArgs e)
         {
-
+            this.ActiveControl = txt_id;
             ThemeUtility.ApplyButtonTheme(btn_close);
             ThemeUtility.ApplyButtonTheme(btn_register);
             ThemeUtility.ApplyTheme(this);
-            //this.titlePanel.BackColor = Theme.primary;
-            //this.BackColor = Theme.headerGridHover;
-            ////this.formPanel.BackColor = Theme.MainBg;
-            //this.inputPanel.BackColor = System.Drawing.Color.White;
-
-            //control
-            //this.btn_register.BackColor = Theme.primary;
-            //this.btn_register.FlatAppearance.MouseOverBackColor = Theme.NavButtonHover;
-            //this.btn_register.FlatAppearance.MouseDownBackColor = Theme.warning;
-
-            //this.idPanel.BackColor = Theme.primary;
-            //this.namaPanel.BackColor = Theme.primary;
-            // this.teleponPanel.BackColor = Theme.primary;
-            // this.alamatPanel.BackColor = Theme.primary;
+           
 
         }
 
@@ -189,7 +176,7 @@ namespace Junior_School_Evaluation_Application.Auth.Views
 
         private void btn_close_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btn_register_Click(object sender, EventArgs e)
@@ -228,6 +215,22 @@ namespace Junior_School_Evaluation_Application.Auth.Views
             DrawPath(rectBottomRight, e.Graphics, fbColors.BottomRightColor);
             //-> SET ROUNDED REGION AND BORDER
             FormRegionAndBorder(this, borderRadius, e.Graphics, Colors.primary, borderSize);
+        }
+
+        private void txt_telepon_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                services.Register(this.txt_id.Text, this.txt_name.Text, this.txt_password.Text, this.txt_telepon.Text, this.txt_alamat.Text);
+            }
+        }
+
+        private void txt_password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                services.Register(this.txt_id.Text, this.txt_name.Text, this.txt_password.Text, this.txt_telepon.Text, this.txt_alamat.Text);
+            }
         }
     }
 }

@@ -117,7 +117,7 @@
             this.txt_username.Location = new System.Drawing.Point(126, 172);
             this.txt_username.Name = "txt_username";
             this.txt_username.Size = new System.Drawing.Size(129, 20);
-            this.txt_username.TabIndex = 14;
+            this.txt_username.TabIndex = 0;
             // 
             // txt_password
             // 
@@ -125,7 +125,8 @@
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '*';
             this.txt_password.Size = new System.Drawing.Size(129, 20);
-            this.txt_password.TabIndex = 16;
+            this.txt_password.TabIndex = 1;
+            this.txt_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_password_KeyDown);
             // 
             // btn_login
             // 
@@ -134,9 +135,10 @@
             this.btn_login.Location = new System.Drawing.Point(62, 246);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(193, 38);
-            this.btn_login.TabIndex = 18;
+            this.btn_login.TabIndex = 3;
             this.btn_login.Text = "Login";
             this.btn_login.UseVisualStyleBackColor = false;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // formPanel
             // 

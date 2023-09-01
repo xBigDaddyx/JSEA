@@ -99,6 +99,7 @@ namespace Junior_School_Evaluation_Application.Auth.Services
                 view.Hide();
                 TeacherServices teacherService = new TeacherServices(model, DatabaseUtility.getConnectionString());
                 Login loginForm = new Login(teacherService);
+                teacherService.Initialize(loginForm);
                 loginForm.Show();
             }
         }

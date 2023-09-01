@@ -10,7 +10,7 @@ namespace Junior_School_Evaluation_Application.Auth.Views
 {
     public partial class Login : Form
     {
-        private int borderRadius = 15;
+        private int borderRadius = 20;
         private int borderSize = 1;
        
 
@@ -147,6 +147,7 @@ namespace Junior_School_Evaluation_Application.Auth.Views
 
         private void Login_Load(object sender, EventArgs e)
         {
+            this.ActiveControl = txt_username;
             ThemeUtility.ApplyButtonTheme(btn_login);
             ThemeUtility.ApplyButtonTheme(btn_close);
             ThemeUtility.ApplyTheme(this);
@@ -154,7 +155,8 @@ namespace Junior_School_Evaluation_Application.Auth.Views
 
         private void btn_close_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
+            
         }
 
         private void titlePanel_MouseMove(object sender, MouseEventArgs e)

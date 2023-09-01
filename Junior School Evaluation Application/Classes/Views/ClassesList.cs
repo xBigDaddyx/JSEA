@@ -27,25 +27,27 @@ namespace Junior_School_Evaluation_Application.Classes.Services
         private void ClassesListInterfaces_Load(object sender, EventArgs e)
         { 
             services.bindData(dgrid_list);
-            this.dgrid_list.ColumnHeadersDefaultCellStyle.BackColor = Theme.headerGridMain;
-            this.dgrid_list.ColumnHeadersDefaultCellStyle.SelectionBackColor = Theme.headerGridHover;
-            this.dgrid_list.RowsDefaultCellStyle.BackColor = Theme.MainBg;
-            this.dgrid_list.RowsDefaultCellStyle.ForeColor = Theme.gridFore;
-            this.dgrid_list.RowsDefaultCellStyle.SelectionBackColor= Theme.gridHover;
-            this.dgrid_list.RowsDefaultCellStyle.SelectionForeColor = Theme.gridFore;
+            this.dgrid_list.ColumnHeadersDefaultCellStyle.BackColor =Colors.ColumnHeadersBg;
+            this.dgrid_list.ColumnHeadersDefaultCellStyle.SelectionBackColor = Colors.ColumnHeadersSelectionBackColor;
+            this.dgrid_list.RowsDefaultCellStyle.BackColor = Colors.RowsDefaultBg;
+            this.dgrid_list.RowsDefaultCellStyle.ForeColor = Colors.RowsDefaultFore;
+            this.dgrid_list.RowsDefaultCellStyle.SelectionBackColor= Colors.RowsDefaultSelectionBackColor;
+            this.dgrid_list.RowsDefaultCellStyle.SelectionForeColor = Colors.RowsDefaultSelectionForeColor;
 
-            this.dgrid_list.AlternatingRowsDefaultCellStyle.BackColor = Theme.MainBg;
-            this.dgrid_list.AlternatingRowsDefaultCellStyle.ForeColor = Theme.gridFore;
-            this.dgrid_list.AlternatingRowsDefaultCellStyle.SelectionBackColor = Theme.gridHover;
-            this.dgrid_list.AlternatingRowsDefaultCellStyle.SelectionForeColor = Theme.gridFore;
+            this.dgrid_list.AlternatingRowsDefaultCellStyle.BackColor = Colors.AlternatingDefaultBg;
+            this.dgrid_list.AlternatingRowsDefaultCellStyle.ForeColor = Colors.AlternatingDefaultFore;
+            this.dgrid_list.AlternatingRowsDefaultCellStyle.SelectionBackColor = Colors.AlternatingDefaultSelectionBackColor;
+            this.dgrid_list.AlternatingRowsDefaultCellStyle.SelectionForeColor = Colors.AlternatingDefaultSelectionForeColor;
 
-            this.dgrid_list.GridColor = Theme.secondary;
-            this.dgrid_list.BackgroundColor = Theme.MainBg;
-            this.groupBox1.BackColor = Theme.MainBg;
-            this.groupBox1.ForeColor = Theme.secondary;
-            this.btn_update.BackColor = Theme.warning;
-            this.btn_delete.BackColor = Theme.danger;
-            this.btn_new.BackColor = Theme.primary;
+            this.dgrid_list.GridColor = Colors.GridColor;
+            this.dgrid_list.BackgroundColor = Colors.mainBg;
+            this.groupBox1.BackColor = Colors.mainBg;
+            this.groupBox1.ForeColor = Colors.mainFore;
+
+            ThemeUtility.ApplyButtonTheme(btn_update, "warning");
+            ThemeUtility.ApplyButtonTheme(btn_delete, "danger");
+            ThemeUtility.ApplyButtonTheme(btn_new, "success");
+           
         }
 
         private void btn_exit_Click(object sender, EventArgs e)

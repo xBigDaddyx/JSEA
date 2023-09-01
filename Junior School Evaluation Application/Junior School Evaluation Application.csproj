@@ -168,7 +168,6 @@
       <DependentUpon>StudentsList.cs</DependentUpon>
     </Compile>
     <Compile Include="Study\Models\Study.cs" />
-    <Compile Include="Theme.cs" />
     <Compile Include="ThemeUtility.cs" />
     <EmbeddedResource Include="Auth\Views\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>

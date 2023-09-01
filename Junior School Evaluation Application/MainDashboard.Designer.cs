@@ -34,11 +34,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             this.navigationPanel = new System.Windows.Forms.Panel();
-            this.bodyPanel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.navButton3 = new System.Windows.Forms.Button();
             this.navButton2 = new System.Windows.Forms.Button();
             this.navButton1 = new System.Windows.Forms.Button();
+            this.bodyPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.navigationPanel.SuspendLayout();
@@ -108,14 +108,6 @@
             this.navigationPanel.Padding = new System.Windows.Forms.Padding(10);
             this.navigationPanel.Size = new System.Drawing.Size(200, 452);
             this.navigationPanel.TabIndex = 5;
-            // 
-            // bodyPanel
-            // 
-            this.bodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bodyPanel.Location = new System.Drawing.Point(200, 36);
-            this.bodyPanel.Name = "bodyPanel";
-            this.bodyPanel.Size = new System.Drawing.Size(824, 452);
-            this.bodyPanel.TabIndex = 6;
             // 
             // button1
             // 
@@ -202,6 +194,14 @@
             this.navButton1.Text = "     Dashboard";
             this.navButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.navButton1.UseVisualStyleBackColor = false;
+            // 
+            // bodyPanel
+            // 
+            this.bodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bodyPanel.Location = new System.Drawing.Point(200, 36);
+            this.bodyPanel.Name = "bodyPanel";
+            this.bodyPanel.Size = new System.Drawing.Size(824, 452);
+            this.bodyPanel.TabIndex = 6;
             // 
             // MainDashboard
             // 
