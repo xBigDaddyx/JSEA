@@ -30,8 +30,7 @@
         {
             this.titlePanel = new System.Windows.Forms.Panel();
             this.btn_close = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.registerIllustration = new System.Windows.Forms.PictureBox();
+            this.illustrationPanel = new System.Windows.Forms.Panel();
             this.formPanel = new System.Windows.Forms.Panel();
             this.inputPanel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -39,7 +38,6 @@
             this.txt_password = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btn_register = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.teleponPanel = new System.Windows.Forms.Panel();
             this.txt_telepon = new System.Windows.Forms.TextBox();
@@ -60,9 +58,11 @@
             this.txt_id = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_id = new System.Windows.Forms.Label();
+            this.btn_register = new System.Windows.Forms.Button();
+            this.registerIllustration = new System.Windows.Forms.PictureBox();
+            this.lbl_title = new System.Windows.Forms.Label();
             this.titlePanel.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.registerIllustration)).BeginInit();
+            this.illustrationPanel.SuspendLayout();
             this.formPanel.SuspendLayout();
             this.inputPanel.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -75,54 +75,46 @@
             this.namaPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.idPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.registerIllustration)).BeginInit();
             this.SuspendLayout();
             // 
             // titlePanel
             // 
+            this.titlePanel.Controls.Add(this.lbl_title);
             this.titlePanel.Controls.Add(this.btn_close);
             this.titlePanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.titlePanel.Location = new System.Drawing.Point(0, 0);
             this.titlePanel.Name = "titlePanel";
             this.titlePanel.Size = new System.Drawing.Size(1071, 39);
             this.titlePanel.TabIndex = 0;
+            this.titlePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.titlePanel_MouseMove);
             // 
             // btn_close
             // 
             this.btn_close.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_close.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_close.FlatAppearance.BorderSize = 0;
             this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btn_close.ForeColor = System.Drawing.Color.White;
             this.btn_close.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_close.Location = new System.Drawing.Point(1025, 3);
+            this.btn_close.Location = new System.Drawing.Point(1028, 0);
             this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(43, 34);
+            this.btn_close.Size = new System.Drawing.Size(43, 39);
             this.btn_close.TabIndex = 24;
             this.btn_close.Text = "X";
             this.btn_close.UseVisualStyleBackColor = false;
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
-            // panel1
+            // illustrationPanel
             // 
-            this.panel1.Controls.Add(this.registerIllustration);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 39);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(25);
-            this.panel1.Size = new System.Drawing.Size(458, 518);
-            this.panel1.TabIndex = 8;
-            // 
-            // registerIllustration
-            // 
-            this.registerIllustration.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.registerIllustration.Image = global::Junior_School_Evaluation_Application.Properties.Resources.register_illu;
-            this.registerIllustration.Location = new System.Drawing.Point(25, 25);
-            this.registerIllustration.Name = "registerIllustration";
-            this.registerIllustration.Padding = new System.Windows.Forms.Padding(25);
-            this.registerIllustration.Size = new System.Drawing.Size(408, 468);
-            this.registerIllustration.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.registerIllustration.TabIndex = 8;
-            this.registerIllustration.TabStop = false;
+            this.illustrationPanel.Controls.Add(this.registerIllustration);
+            this.illustrationPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.illustrationPanel.Location = new System.Drawing.Point(0, 39);
+            this.illustrationPanel.Name = "illustrationPanel";
+            this.illustrationPanel.Padding = new System.Windows.Forms.Padding(25);
+            this.illustrationPanel.Size = new System.Drawing.Size(458, 518);
+            this.illustrationPanel.TabIndex = 8;
             // 
             // formPanel
             // 
@@ -198,25 +190,6 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "Password";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btn_register
-            // 
-            this.btn_register.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btn_register.FlatAppearance.BorderSize = 0;
-            this.btn_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_register.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.btn_register.ForeColor = System.Drawing.Color.White;
-            this.btn_register.Image = global::Junior_School_Evaluation_Application.Properties.Resources.apps_white__1___1_;
-            this.btn_register.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_register.Location = new System.Drawing.Point(448, 360);
-            this.btn_register.Name = "btn_register";
-            this.btn_register.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_register.Size = new System.Drawing.Size(99, 34);
-            this.btn_register.TabIndex = 23;
-            this.btn_register.Text = "     Register";
-            this.btn_register.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_register.UseVisualStyleBackColor = false;
-            this.btn_register.Click += new System.EventHandler(this.btn_register_Click);
             // 
             // panel6
             // 
@@ -429,13 +402,54 @@
             this.lbl_id.Text = "ID";
             this.lbl_id.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btn_register
+            // 
+            this.btn_register.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btn_register.FlatAppearance.BorderSize = 0;
+            this.btn_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_register.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btn_register.ForeColor = System.Drawing.Color.White;
+            this.btn_register.Image = global::Junior_School_Evaluation_Application.Properties.Resources.register_icon_16;
+            this.btn_register.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_register.Location = new System.Drawing.Point(439, 360);
+            this.btn_register.Name = "btn_register";
+            this.btn_register.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btn_register.Size = new System.Drawing.Size(108, 34);
+            this.btn_register.TabIndex = 23;
+            this.btn_register.Text = "      Register";
+            this.btn_register.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_register.UseVisualStyleBackColor = false;
+            this.btn_register.Click += new System.EventHandler(this.btn_register_Click);
+            // 
+            // registerIllustration
+            // 
+            this.registerIllustration.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.registerIllustration.Image = global::Junior_School_Evaluation_Application.Properties.Resources.register_illu;
+            this.registerIllustration.Location = new System.Drawing.Point(25, 25);
+            this.registerIllustration.Name = "registerIllustration";
+            this.registerIllustration.Padding = new System.Windows.Forms.Padding(25);
+            this.registerIllustration.Size = new System.Drawing.Size(408, 468);
+            this.registerIllustration.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.registerIllustration.TabIndex = 8;
+            this.registerIllustration.TabStop = false;
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Location = new System.Drawing.Point(12, 9);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(83, 13);
+            this.lbl_title.TabIndex = 25;
+            this.lbl_title.Text = "User registration";
+            this.lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1071, 557);
             this.Controls.Add(this.formPanel);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.illustrationPanel);
             this.Controls.Add(this.titlePanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -443,9 +457,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Register_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Register_Paint);
             this.titlePanel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.registerIllustration)).EndInit();
+            this.titlePanel.PerformLayout();
+            this.illustrationPanel.ResumeLayout(false);
             this.formPanel.ResumeLayout(false);
             this.formPanel.PerformLayout();
             this.inputPanel.ResumeLayout(false);
@@ -469,6 +484,7 @@
             this.panel2.PerformLayout();
             this.idPanel.ResumeLayout(false);
             this.idPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.registerIllustration)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -476,7 +492,7 @@
         #endregion
 
         private System.Windows.Forms.Panel titlePanel;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel illustrationPanel;
         private System.Windows.Forms.PictureBox registerIllustration;
         private System.Windows.Forms.Panel formPanel;
         private System.Windows.Forms.Panel inputPanel;
@@ -507,5 +523,6 @@
         private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbl_title;
     }
 }

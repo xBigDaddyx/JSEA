@@ -131,6 +131,7 @@
     <Compile Include="Classes\Views\ClassesList.Designer.cs">
       <DependentUpon>ClassesList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Colors.cs" />
     <Compile Include="DatabaseUtility.cs" />
     <Compile Include="Auth\Views\Login.cs">
       <SubType>Form</SubType>
@@ -168,6 +169,7 @@
     </Compile>
     <Compile Include="Study\Models\Study.cs" />
     <Compile Include="Theme.cs" />
+    <Compile Include="ThemeUtility.cs" />
     <EmbeddedResource Include="Auth\Views\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +213,24 @@
     <EmbeddedResource Include="Students\Views\StudentsList.resx">
       <DependentUpon>StudentsList.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Font\Montserrat\Montserrat-Black.ttf" />
+    <None Include="Font\Montserrat\Montserrat-BlackItalic.ttf" />
+    <None Include="Font\Montserrat\Montserrat-Bold.ttf" />
+    <None Include="Font\Montserrat\Montserrat-BoldItalic.ttf" />
+    <None Include="Font\Montserrat\Montserrat-ExtraBold.ttf" />
+    <None Include="Font\Montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <None Include="Font\Montserrat\Montserrat-ExtraLight.ttf" />
+    <None Include="Font\Montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <None Include="Font\Montserrat\Montserrat-Italic.ttf" />
+    <None Include="Font\Montserrat\Montserrat-Light.ttf" />
+    <None Include="Font\Montserrat\Montserrat-LightItalic.ttf" />
+    <None Include="Font\Montserrat\Montserrat-Medium.ttf" />
+    <None Include="Font\Montserrat\Montserrat-MediumItalic.ttf" />
+    <None Include="Font\Montserrat\Montserrat-Regular.ttf" />
+    <None Include="Font\Montserrat\Montserrat-SemiBold.ttf" />
+    <None Include="Font\Montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <None Include="Font\Montserrat\Montserrat-Thin.ttf" />
+    <None Include="Font\Montserrat\Montserrat-ThinItalic.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -229,6 +249,8 @@
     <Content Include="master_db.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\register-icon-16.png" />
+    <None Include="Resources\login-illu.png" />
     <None Include="Resources\register-illu.png" />
     <None Include="Resources\classes-icon-16.png" />
     <None Include="Resources\studies-icon-16.png" />

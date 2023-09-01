@@ -113,9 +113,209 @@ namespace Junior_School_Evaluation_Application.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap login_illu {
+            get {
+                object obj = ResourceManager.GetObject("login-illu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap menu_2_white__1_ {
             get {
                 object obj = ResourceManager.GetObject("menu_2_white__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_Black {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_Black", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_BlackItalic {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_BlackItalic", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_Bold {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_Bold", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_BoldItalic {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_BoldItalic", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_ExtraBold {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_ExtraBold", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_ExtraBoldItalic {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_ExtraBoldItalic", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_ExtraLight {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_ExtraLight", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_ExtraLightItalic {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_ExtraLightItalic", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_Italic {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_Italic", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_Light {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_Light", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_LightItalic {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_LightItalic", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_Medium {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_Medium", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_MediumItalic {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_MediumItalic", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_Regular {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_Regular", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_SemiBold {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_SemiBold", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_SemiBoldItalic {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_SemiBoldItalic", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_Thin {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_Thin", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Montserrat_ThinItalic {
+            get {
+                object obj = ResourceManager.GetObject("Montserrat_ThinItalic", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap register_icon_16 {
+            get {
+                object obj = ResourceManager.GetObject("register-icon-16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

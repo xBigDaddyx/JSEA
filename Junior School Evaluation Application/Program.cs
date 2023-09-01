@@ -24,7 +24,8 @@ namespace Junior_School_Evaluation_Application
 
             //teacherService.Initialize(loginForm);
             TeacherRegisterService registerService = new TeacherRegisterService(teacherModel, DatabaseUtility.getConnectionString());
-            bool registered = registerService.CheckRegistered();
+           // bool registered = registerService.CheckRegistered();
+            bool registered =true;
             if (registered)
             {
             

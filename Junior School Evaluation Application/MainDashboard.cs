@@ -144,5 +144,10 @@ namespace Junior_School_Evaluation_Application
         {
             
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

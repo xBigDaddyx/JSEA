@@ -118,34 +118,94 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="apps_white__1___1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\apps-white (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="menu_2_white__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu-2-white (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="classes-icon-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\classes-icon-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="apps_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\apps-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Montserrat_SemiBoldItalic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-SemiBoldItalic.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Montserrat_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-Bold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="2769504" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2769504.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="apps_white__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\apps-white (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="users_white__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\users-white (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="classes-icon-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classes-icon-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="users_white__1___1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\users-white (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Montserrat_Thin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-Thin.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="studies-icon-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\studies-icon-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="login-illu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login-illu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="users_white__1___1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users-white (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="apps_white__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\apps-white (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_2_white__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-2-white (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Montserrat_Light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-Light.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Montserrat_ExtraBold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-ExtraBold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Montserrat_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-Black.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Montserrat_SemiBold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-SemiBold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="apps_white__1___1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\apps-white (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Montserrat_ThinItalic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-ThinItalic.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Montserrat_ExtraLightItalic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-ExtraLightItalic.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Montserrat_MediumItalic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-MediumItalic.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Montserrat_ExtraLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-ExtraLight.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Montserrat_Italic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-Italic.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Montserrat_BoldItalic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-BoldItalic.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Montserrat_BlackItalic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-BlackItalic.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="users_white__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users-white (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="register-illu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\register-illu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Montserrat_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Montserrat_ExtraBoldItalic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-ExtraBoldItalic.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Montserrat_LightItalic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-LightItalic.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Montserrat_Medium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Font\Montserrat\Montserrat-Medium.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="register-icon-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\register-icon-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
